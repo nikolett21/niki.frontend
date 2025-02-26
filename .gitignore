@@ -1,6 +1,6 @@
 /fotok
 /.vscode
-/js
+
 .env
 package-lock json
 Admin.html
