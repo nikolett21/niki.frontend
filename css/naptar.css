@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.calendar-container {
+    display: flex;
+}
+.days {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.days div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.dates div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+.dates div:hover {
+    background-color: #f0f0f0;
+}
+.times {
+    margin-top: 20px;
+}
+.times div {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.times div:hover {
+    background-color: #f0f0f0;
+}
+.selected {
+    background-color: #d3d3d3;
+}

@@ -1,11 +1,10 @@
 /fotok
 /.vscode
-
 .env
 package-lock json
 Admin.html
 home.html
-login.html
+login.html 
 registration.html
 Admin.css
 home.css

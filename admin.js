@@ -23,7 +23,7 @@ async function login() {
     
     if (res.ok) {
         alert(data.message);
-        window.location.href = '/frontend/home_admin.html';
+        window.location.href = "/frontend/home_admin.html";
     } else if (data.errors) {
         let errorMessage = '';
         for (let i = 0; i < data.errors.length; i++) {
