@@ -1,6 +1,18 @@
 const btnLogin = document.getElementsByClassName('login')[0];
+const btnReg = document.getElementsByClassName('reg')[0];
+const btnAdmin = document.getElementsByClassName('admin')[0];
+
+btnReg.addEventListener('click', () => {
+    event.preventDefault(); 
+    window.location.href = '/frontend/registration.html';
+});
 
 btnLogin.addEventListener('click', login);
+
+btnAdmin.addEventListener('click', () => {
+    event.preventDefault(); 
+    window.location.href = '/frontend/Admin.html';
+});
 
 async function login() {
     const email = document.getElementById('email').value;
