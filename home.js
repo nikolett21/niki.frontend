@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', getpfp);
 
 // logout
 async function logout() {
-    const res = await fetch('http://127.0.0.1:2000/api/logout', {
+    const res = await fetch('/api/logout', {
         method: 'POST',
         credentials: 'include'
     });
@@ -24,7 +24,7 @@ async function logout() {
 
 // a profile kép megjelenítése
 async function getpfp() {
-    const res = await fetch('http://127.0.0.1:2000/api/getpfp', {
+    const res = await fetch('/api/getpfp', {
         method: 'GET',
         credentials: 'include'
     });
@@ -33,6 +33,6 @@ async function getpfp() {
     console.log(data);
     
     if (res.ok) {
-        btnPic.style.backgroundImage = `url('http://127.0.0.1:2000/uploads/${data[0].pfp}')`;
+        btnPic.style.backgroundImage = `url('/uploads/${data[0].pfp}')`;
     }
 }

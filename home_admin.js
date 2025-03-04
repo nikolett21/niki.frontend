@@ -12,7 +12,7 @@ iconLogout.addEventListener('click', logout);
 
 
 async function getImg() {
-    const res = await fetch('http://127.0.0.1:2000/api/food', {
+    const res = await fetch('/api/food', {
         method: 'GET',
         credentials: 'include'
     });

@@ -20,7 +20,7 @@ async function login() {
 
     console.log(email, psw);
     
-    const res = await fetch('http://127.0.0.1:2000/api/login', {
+    const res = await fetch('/api/login', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

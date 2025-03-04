@@ -13,7 +13,7 @@ async function register() {
         return alert('A két jelszó nem egyezik!');
     }
 
-    const res = await fetch('http://127.0.0.1:2000/api/registration', {
+    const res = await fetch('/api/registration', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

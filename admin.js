@@ -9,7 +9,7 @@ async function login() {
 
     console.log(email, psw, );
     
-    const res = await fetch('http://127.0.0.1:2000/api/admin', {
+    const res = await fetch('/api/admin', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
