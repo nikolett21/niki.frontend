@@ -20,7 +20,7 @@ async function login() {
 
     console.log(email, psw);
     
-    const res = await fetch('/api/login', {
+    const res = await fetch('/api/index', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
