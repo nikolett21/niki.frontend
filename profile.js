@@ -15,7 +15,7 @@ async function save() {
     }
 
     try {
-        const res = await fetch('http://127.0.0.1:2000/api/update', {
+        const res = await fetch('/api/update', {
             method: 'POST',
             body: formData,
             credentials: 'include'
