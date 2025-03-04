@@ -1,24 +1,32 @@
+const btnLogin = document.getElementsByClassName('login')[0];
 const btnReg = document.getElementsByClassName('reg')[0];
+const btnAdmin = document.getElementsByClassName('admin')[0];
 
-btnReg.addEventListener('click', register);
+btnReg.addEventListener('click', () => {
+    event.preventDefault(); 
+    window.location.href = '../registration.html';
+});
 
-async function register() {
+btnLogin.addEventListener('click', login);
+
+btnAdmin.addEventListener('click', () => {
+    event.preventDefault(); 
+    window.location.href = '../Admin.html';
+});
+
+async function login() {
     const email = document.getElementById('email').value;
-    const name = document.getElementById('name').value;
     const psw = document.getElementById('psw').value;
-    const psw2 = document.getElementById('psw2').value;
 
-    console.log(email, name, psw, psw2);
-    if (psw !== psw2) {
-        return alert('A két jelszó nem egyezik!');
-    }
-
-    const res = await fetch('/api/registration', {
+    console.log(email, psw);
+    
+    const res = await fetch('/api/login', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({ email, name, psw })
+        body: JSON.stringify({ email, psw }),
+        credentials: 'include'
     });
 
     const data = await res.json();
@@ -26,7 +34,7 @@ async function register() {
     
     if (res.ok) {
         alert(data.message);
-        window.location.href = '/frontend/login.html';
+        window.location.href = '../home.html';
     } else if (data.errors) {
         let errorMessage = '';
         for (let i = 0; i < data.errors.length; i++) {

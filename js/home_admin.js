@@ -5,7 +5,7 @@ const iconPlus = document.getElementsByClassName('fixed')[0];
 window.addEventListener('DOMContentLoaded', getfoods);
 
 iconUser.addEventListener('click', () => {
-    window.location.href = '/frontend/profile.html';
+    window.location.href = '../profile.html';
 });
 
 iconLogout.addEventListener('click', logout);

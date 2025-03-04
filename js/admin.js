@@ -1,31 +1,20 @@
 const btnLogin = document.getElementsByClassName('login')[0];
-const btnReg = document.getElementsByClassName('reg')[0];
-const btnAdmin = document.getElementsByClassName('admin')[0];
-
-btnReg.addEventListener('click', () => {
-    event.preventDefault(); 
-    window.location.href = '/frontend/registration.html';
-});
 
 btnLogin.addEventListener('click', login);
-
-btnAdmin.addEventListener('click', () => {
-    event.preventDefault(); 
-    window.location.href = '/frontend/Admin.html';
-});
 
 async function login() {
     const email = document.getElementById('email').value;
     const psw = document.getElementById('psw').value;
 
-    console.log(email, psw);
+
+    console.log(email, psw, );
     
-    const res = await fetch('/api/login', {
+    const res = await fetch('/api/admin', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({ email, psw }),
+        body: JSON.stringify({ email, psw, szerepkor: 1}),
         credentials: 'include'
     });
 
@@ -34,7 +23,7 @@ async function login() {
     
     if (res.ok) {
         alert(data.message);
-        window.location.href = '/frontend/home.html';
+        window.location.href = "../home_admin.html";
     } else if (data.errors) {
         let errorMessage = '';
         for (let i = 0; i < data.errors.length; i++) {
