@@ -1,12 +1,4 @@
 /fotok
 /.vscode
 .env
-package-lock json
-Admin.html
-home.html
-login.html 
-registration.html
-Admin.css
-home.css
-login.css
-registration.css
+package-lock.json
