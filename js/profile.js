@@ -26,7 +26,7 @@ async function save() {
         
         if (res.ok) {
             alert(data.message);
-            window.location.href = '/frontend/home.html';
+            window.location.href = '../home.html';
         } else if (data.errors) {
             let errorMessage = '';
             for (let i = 0; i < data.errors.length; i++) {
