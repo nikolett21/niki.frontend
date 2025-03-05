@@ -33,6 +33,23 @@ header {
     color: black;
 }
 
+.menu-logo img {
+    border-radius: 50px;
+    width: 150px;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    /* Függőlegesen középre */
+    left: 50%;
+    /* Vízszintesen középre */
+    transform: translate(-50%, -50%);
+    /* Pontos középre igazítás */
+    width: 100px;
+    /* Logo mérete */
+    height: auto;
+}
 .hamburger-menu {
     display: none;
     flex-direction: column;
