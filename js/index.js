@@ -20,7 +20,7 @@ async function login() {
 
     console.log(email, psw);
     
-    const res = await fetch('/api/index', {
+    const res = await fetch('https://nodejs214.dszcbaross.edu.hu/api/index', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

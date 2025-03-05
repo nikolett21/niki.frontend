@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8f8f8;
+    background-image: url(/fotok/hatter.jpeg);
 }
 .container {
     display: flex;
@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    color: teal;
+    color: #04539c;
 }
 .week-days {
     display: grid;
@@ -43,7 +43,7 @@ body {
     cursor: pointer;
 }
 .selected {
-    background-color: teal;
+    background-color: rgb(75, 120, 219);
     color: white;
 }
 .inactive {
@@ -58,7 +58,16 @@ body {
     text-align: left;
 }
 .time-button {
-    background-color: teal;
+    background-color: #04539c;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.foglalasGomb {
+    background-color: #04539c;
     color: white;
     border: none;
     padding: 10px;

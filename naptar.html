@@ -13,21 +13,23 @@
             <div class="calendar-header">
                 <button id="prev-month" onclick="changeMonth(-1)" disabled>&lt;</button>
                 <span id="current-month">2025 Március</span>
-                <button onclick="changeMonth(1)">&gt;</button>
+                <button onclick="changeMonth(+1)">&gt;</button>
             </div>
             <div class="week-days">
-                <div>H</div><div>K</div><div>Sz</div><div>Cs</div><div>P</div><div>Sz</div><div class="sunday">V</div>
+                <div>H</div><div>K</div><div>Sz</div><div>Cs</div><div>P</div><div>Sz</div><div>V</div>
             </div>
             <div class="calendar-days" id="calendar-days">
+                <!-- Ide generálja a napokat a JS -->
             </div>
         </div>
         <div class="booking-section">
             <h2 id="selected-date">Mai nap</h2>
-            <h3>Délután</h3>
-            <button class="time-button">12:00</button>
-            <button class="time-button">15:30</button>
+            <div id="time-slots">
+            </div>
+            <p id="selected-time"></p>
+            <button class="foglalasGomb" id="foglalasGomb">Foglalás</button>
         </div>
-    </div>
-    <script src="/js/naptar.js "></script>
+    <script type="module" src="/js/naptar.js "></script>
+
 </body>
 </html>
