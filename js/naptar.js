@@ -71,6 +71,7 @@ function bookTimeSlot(day, time, element) {
     selectedTime = time; // Globális változó frissítése
 }
 
+
 function changeMonth(direction) {
     currentMonth += direction;
     if (currentMonth < 0) {
