@@ -33,6 +33,23 @@ header {
     color: black;
 }
 
+.menu-logo img {
+    border-radius: 50px;
+    width: 150px;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    /* Függőlegesen középre */
+    left: 50%;
+    /* Vízszintesen középre */
+    transform: translate(-50%, -50%);
+    /* Pontos középre igazítás */
+    width: 100px;
+    /* Logo mérete */
+    height: auto;
+}
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -66,7 +83,7 @@ nav a {
 
 .fejlec {
     text-align: center;
-    background-image: url('/fotok/vakvarju-paulay-pest-13.jpeg');
+    background-image: url('/fotok/hatter.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -127,6 +144,7 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    z-index: 1000px;
   }
   
   .button span {
@@ -134,6 +152,7 @@ button {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    z-index: 1000px;
   }
   
   .button span:after {
@@ -143,15 +162,18 @@ button {
     top: 0;
     right: -20px;
     transition: 0.5s;
+    z-index: 1000px;
   }
   
   .button:hover span {
     padding-right: 25px;
+    z-index: 1000px;
   }
   
   .button:hover span:after {
     opacity: 1;
     right: 0;
+    z-index: 1000px;
   }
 
 .velemenyek {
