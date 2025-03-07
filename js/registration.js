@@ -1,8 +1,9 @@
-const btnReg = document.getElementsByClassName('reg')[0];
+const btnReg = document.getElementById('registration');
 
 btnReg.addEventListener('click', register);
 
-async function register() {
+async function register(event) {
+    event.preventDefault();
     const email = document.getElementById('email').value;
     const name = document.getElementById('name').value;
     const psw = document.getElementById('psw').value;
