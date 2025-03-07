@@ -18,7 +18,7 @@ async function login() {
     const psw = document.getElementById('psw').value;
 
     console.log(email, psw);
-
+    //
     const res = await fetch('/api/index', {
         method: 'POST',
         headers: {
