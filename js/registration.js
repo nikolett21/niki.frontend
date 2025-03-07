@@ -1,6 +1,6 @@
 const btnReg = document.getElementById('registration');
 
-btnReg.addEventListener('click', register);
+btnReg.addEventListener('submit', register);
 
 async function register(event) {
     event.preventDefault();
