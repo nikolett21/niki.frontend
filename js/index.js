@@ -3,7 +3,6 @@ const btnReg = document.getElementsByClassName('reg')[0];
 const btnAdmin = document.getElementsByClassName('admin')[0];
 
 btnReg.addEventListener('click', () => {
-    event.preventDefault();
     window.location.href = '../registration.html';
 });
 
@@ -34,7 +33,7 @@ async function login() {
         alert(data.message);
         window.location.href = '../home.html';
     } else if (res.ok && data.szerepkor === 1) {
-        window.location.href = '../Admin.html';
+        window.location.href = '../adminful.html';
     } else if (data.errors) {
         let errorMessage = '';
         for (let i = 0; i < data.errors.length; i++) {
