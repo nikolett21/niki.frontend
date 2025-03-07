@@ -41,7 +41,12 @@ header {
     border-radius: 50px;
     width: 150px;
 }
-
+.icon-home:hover,
+.icon-user:hover,
+.icon-logout:hover,
+.icon-info:hover{
+    transform: scale(1.1);
+}
 .logo{
     position: absolute;
     top: 50%;

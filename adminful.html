@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminfül</title>
+    <link rel="stylesheet" href="/css/adminful.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+</head>
+
+<body id="header">
+    <header>
+        <div class="menu-logo">
+            <span class="menu-logo">Ízhorizon-adminfül</span>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <a href="#header" class="icon-home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="#" class="icon-logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="foods" id="foods">
+            <label for="kategoria_id" class="kategoria_id">Válassz kategóriát:</label>
+            <div class id="bevitelimezo">
+            <div class="price">
+                <input type="text" name="price" id="price" placeholder="Étel ára:">
+            </div>
+            <div class="name">
+                <input type="text" name="name" id="name" placeholder="Étel neve:">
+            </div>
+            <div class="leiras">
+                <input type="text" name="leiras" id="leiras" placeholder=" Étel leírása:">
+            </div>
+        </div>
+            <select name="kategoria_id" class="kategoria_id_menu" id="kategoria_id">
+                <option value="Eloetelek" class="eloetelek" id="1">Eloetelek</option>
+                <option value="levesek" id="2">levesek</option>
+                <option value="foetelek" id="3">foetelek</option>
+                <option value="desszertek" id="4">desszertek</option>
+                <option value="uditok" id="5">uditok</option>
+                <option value="kavek" id="6">kavek</option>
+            </select>
+
+            <br>
+            <button class="save" id="save">Mentés</button>
+        </div>
+        <table>
+            <tr>
+                <th>user_id</th>
+                <th>email</th>
+                <th>szerepkor</th>
+                <th>pfp</th>
+                <th>name</th>
+            </tr>
+            <tr>
+                <td>(user_id)</td>
+                <td>(email)</td>
+                <td>(szerepkor)</td>
+                <td>(pfp)</td>
+                <td>(name)</td>
+            </tr>
+        </table>
+        <div class="edit-pic">
+            <label for="fileUpload">
+                <i class="fa-solid fa-paperclip"></i>
+                Kép beillesztése
+            </label>
+            <input type="file" id="fileUpload">
+        </div>
+        <div class="edit-button">
+            <button type="button">Kép feltöltés</button>
+        </div>
+
+    </main>
+
+    <script src="js/adminful.js"></script>
+</body>
+
+</html>
