@@ -3,14 +3,13 @@ const btnReg = document.getElementsByClassName('reg')[0];
 const btnAdmin = document.getElementsByClassName('admin')[0];
 
 btnReg.addEventListener('click', () => {
-    event.preventDefault(); 
+    event.preventDefault();
     window.location.href = '../registration.html';
 });
 
 btnLogin.addEventListener('click', login);
 
 btnAdmin.addEventListener('click', () => {
-    event.preventDefault(); 
     window.location.href = '../Admin.html';
 });
 
@@ -19,22 +18,23 @@ async function login() {
     const psw = document.getElementById('psw').value;
 
     console.log(email, psw);
-    
-    const res = await fetch('https://nodejs214.dszcbaross.edu.hu/api/index', {
+
+    const res = await fetch('/api/index', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({ email, psw }),
-        credentials: 'include'
+        body: JSON.stringify({ email, psw })
     });
 
     const data = await res.json();
     console.log(data);
-    
-    if (res.ok) {
+
+    if (res.ok && data.szerepkor === 0) {
         alert(data.message);
         window.location.href = '../home.html';
+    } else if (res.ok && data.szerepkor === 1) {
+        window.location.href = '../Admin.html';
     } else if (data.errors) {
         let errorMessage = '';
         for (let i = 0; i < data.errors.length; i++) {
