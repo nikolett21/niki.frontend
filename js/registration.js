@@ -9,7 +9,7 @@ async function register(event) {
     const psw = document.getElementById('psw').value;
     const psw2 = document.getElementById('psw2').value;
 
-    console.log(email, name, psw, psw2);
+    console.log(email, name, psw, psw2); //
     if (psw !== psw2) {
         return alert('A két jelszó nem egyezik!');
     }
