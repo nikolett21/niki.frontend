@@ -133,4 +133,4 @@ async function foglalas() {
 }
 
 // Eseményfigyelő hozzáadása a gombhoz
-document.getElementById("foglalasGomb").addEventListener("click", foglalas);í
+document.getElementById("foglalasGomb").addEventListener("click", foglalas);
