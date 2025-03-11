@@ -97,17 +97,24 @@ function foglalas() {
             title: "Hiba",
             text: "Kérjük, válassz ki egy napot és egy időpontot!",
             icon: "error",
-            draggable: true
         });
         return;
     }
-
+    const selectedDate = `${currentYear} ${monthNames[currentMonth]} ${selectedDay}.`;
+    const selectedTimeSlot = selectedTime;
+    fetch('/api/foglalas', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ date: selectedDate, time: selectedTimeSlot }),
+    })
     Swal.fire({
         title: `Sikeres foglalás: ${currentYear} ${monthNames[currentMonth]} ${selectedDay}. ${selectedTime}`,
         icon: "success",
-        draggable: true
     });
+    
 }
 
 // Eseményfigyelő hozzáadása a gombhoz
-document.getElementById("foglalasGomb").addEventListener("click", foglalas);í
+document.getElementById("foglalasGomb").addEventListener("click", foglalas);
