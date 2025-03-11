@@ -5,18 +5,27 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url(/fotok/hatter.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin: 0;
+    padding: 0;
 }
+
 .container {
     display: flex;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
 }
+
+/* Naptár */
 .calendar {
     width: 300px;
     margin-right: 20px;
 }
+
 .calendar-header {
     display: flex;
     justify-content: space-between;
@@ -24,6 +33,7 @@ body {
     font-size: 20px;
     color: #04539c;
 }
+
 .week-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -31,41 +41,42 @@ body {
     font-weight: bold;
     margin-top: 10px;
 }
+
 .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
     text-align: center;
 }
+
 .day {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
+
 .selected {
     background-color: rgb(75, 120, 219);
     color: white;
 }
+
 .inactive {
     color: lightgray;
     pointer-events: none;
 }
+
 .sunday {
     color: red;
     pointer-events: none;
 }
+
+/* Foglalási szekció */
 .booking-section {
     text-align: left;
 }
-.time-button {
-    background-color: #04539c;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
+/* Gombok */
+.time-button,
 .foglalasGomb {
     background-color: #04539c;
     color: white;
@@ -74,4 +85,45 @@ body {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .calendar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .calendar-days {
+        gap: 3px;
+    }
+
+    .booking-section {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-header {
+        font-size: 18px;
+    }
+
+    .day {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .time-button,
+    .foglalasGomb {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
 }

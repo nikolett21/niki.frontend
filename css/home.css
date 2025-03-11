@@ -248,12 +248,30 @@ footer address {
         position: absolute;
         top: 60px;
         right: 20px;
-        background-color: #333;
+        background-color: white;
         padding: 10px;
         border-radius: 5px;
     }
 
-    #menu-toggle:checked+.hamburger-menu+nav {
+    #menu-toggle:checked + .hamburger-menu + nav {
         display: flex;
+    }
+
+    .fejlec h1 {
+        font-size: 2rem;
+    }
+
+    .fejlec p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    .menu-item img {
+        max-width: 100%;
     }
 }

@@ -63,6 +63,16 @@ header h1 {
     position: relative;
 
 }
+@media (max-width: 768px) {
+    .eloetelek-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 oszlop tableten */
+    }
+}
+@media (max-width: 480px) {
+    .eloetelek-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 oszlop mobilon */
+    }
+}
 
 .eloetelek-item {
     text-align: center;
