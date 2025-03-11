@@ -91,23 +91,47 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("time-slots").innerHTML = "<h3>Válassz egy napot!</h3>";
 });
 
-function foglalas() {
+async function foglalas() {
     if (!selectedDay || !selectedTime) {
         Swal.fire({
             title: "Hiba",
             text: "Kérjük, válassz ki egy napot és egy időpontot!",
             icon: "error",
-            draggable: true
         });
         return;
     }
 
-    Swal.fire({
-        title: `Sikeres foglalás: ${currentYear} ${monthNames[currentMonth]} ${selectedDay}. ${selectedTime}`,
-        icon: "success",
-        draggable: true
-    });
+    // Convert the selected date to YYYY-MM-DD format
+    const selectedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(selectedDay).padStart(2, '0')}`;
+    const selectedTimeSlot = selectedTime;
+
+    try {
+        const response = await fetch('/api/foglalas', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ datum: selectedDate, ido: selectedTimeSlot }),
+        });
+
+        if (!response.ok) {
+            throw new Error('Hiba történt a foglalás során');
+        }
+
+        const data = await response.json();
+        Swal.fire({
+            title: `Sikeres foglalás: ${currentYear} ${monthNames[currentMonth]} ${selectedDay}. ${selectedTime}`,
+            icon: "success",
+        });
+    } catch (error) {
+        Swal.fire({
+            title: "Hiba",
+            text: error.message || "Hiba történt a foglalás során.",
+            icon: "error",
+        });
+        console.error('Error:', error);
+    }
 }
 
 // Eseményfigyelő hozzáadása a gombhoz
-document.getElementById("foglalasGomb").addEventListener("click", foglalas);í
+document.getElementsByClassName("foglalasGomb")[0].addEventListener("click", foglalas);
