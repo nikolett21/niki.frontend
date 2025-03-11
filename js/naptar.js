@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("time-slots").innerHTML = "<h3>Válassz egy napot!</h3>";
 });
 
-function foglalas() {
+async function foglalas() {
     if (!selectedDay || !selectedTime) {
         Swal.fire({
             title: "Hiba",
@@ -102,7 +102,7 @@ function foglalas() {
     }
     const selectedDate = `${currentYear} ${monthNames[currentMonth]} ${selectedDay}.`;
     const selectedTimeSlot = selectedTime;
-    fetch('/api/foglalas', {
+    const fetch = await fetch('/api/foglalas', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
