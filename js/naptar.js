@@ -101,7 +101,8 @@ async function foglalas() {
         return;
     }
 
-    const selectedDate = `${currentYear} ${monthNames[currentMonth]} ${selectedDay}.`;
+    // Convert the selected date to YYYY-MM-DD format
+    const selectedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(selectedDay).padStart(2, '0')}`;
     const selectedTimeSlot = selectedTime;
 
     try {
