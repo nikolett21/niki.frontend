@@ -110,7 +110,7 @@ async function foglalas() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ date: selectedDate, time: selectedTimeSlot }),
+            body: JSON.stringify({ datum: selectedDate, ido: selectedTimeSlot }),
         });
 
         if (!response.ok) {
