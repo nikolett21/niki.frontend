@@ -100,21 +100,37 @@ async function foglalas() {
         });
         return;
     }
+
     const selectedDate = `${currentYear} ${monthNames[currentMonth]} ${selectedDay}.`;
     const selectedTimeSlot = selectedTime;
-    const fetch = await fetch('/api/foglalas', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ date: selectedDate, time: selectedTimeSlot }),
-    })
-    Swal.fire({
-        title: `Sikeres foglalás: ${currentYear} ${monthNames[currentMonth]} ${selectedDay}. ${selectedTime}`,
-        icon: "success",
-    });
-    
+
+    try {
+        const response = await fetch('/api/foglalas', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ date: selectedDate, time: selectedTimeSlot }),
+        });
+
+        if (!response.ok) {
+            throw new Error('Hiba történt a foglalás során');
+        }
+
+        const data = await response.json();
+        Swal.fire({
+            title: `Sikeres foglalás: ${currentYear} ${monthNames[currentMonth]} ${selectedDay}. ${selectedTime}`,
+            icon: "success",
+        });
+    } catch (error) {
+        Swal.fire({
+            title: "Hiba",
+            text: error.message || "Hiba történt a foglalás során.",
+            icon: "error",
+        });
+        console.error('Error:', error);
+    }
 }
 
 // Eseményfigyelő hozzáadása a gombhoz
-document.getElementById("foglalasGomb").addEventListener("click", foglalas);
+document.getElementById("foglalasGomb").addEventListener("click", foglalas);í
