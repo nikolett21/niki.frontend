@@ -16,22 +16,22 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     max-width: 400px;
-    width: 100%;
+    width: 70%;
 }
 
 .logo {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 1000px;
+    
 }
 
 h1 {
     font-size: 2rem;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
 }
 
 input {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -40,7 +40,7 @@ input {
 }
 
 button {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin-top: 10px;
     background-color: #5a5af7;
@@ -49,7 +49,7 @@ button {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 button:hover {
@@ -63,4 +63,9 @@ button:hover {
 
 .secondary-button:hover {
     background-color: #4545d4;
+}
+img{
+    width: 15%;
+    justify-content: center;
+    align-items: center;
 }
