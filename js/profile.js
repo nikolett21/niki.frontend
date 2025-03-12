@@ -62,7 +62,7 @@ async function save() {
 async function save() {
     const nameInput = document.getElementById('name');
     const pswInput = document.getElementById('psw');
-    const pfpInput = document.getElementById('pfp'); // Javítva az azonosító
+    const pfpInput = document.getElementById('pfp');
 
     if (!nameInput || !pswInput || !pfpInput) {
         console.error("Nem található az egyik input elem.");
@@ -82,7 +82,7 @@ async function save() {
 
     try {
         const res = await fetch('/api/editProfile', {
-            method: 'POST',
+            method: 'PUT',
             body: formData,
             credentials: 'include'
         });
