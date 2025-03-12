@@ -26,7 +26,7 @@ async function save() {
     formData.append('name', name);
     formData.append('psw', psw);
     if (pfp) {
-        formData.append('file', pfp);
+        formData.append('pfp', pfp);
     }
 
     try {
