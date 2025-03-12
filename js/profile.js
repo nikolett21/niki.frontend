@@ -1,4 +1,5 @@
-/* const btnSave = document.getElementsById('btnSave')[0];
+/* const btnSave = document.getElementById('btnSave');
+
 
 btnSave.addEventListener('click', save);
 
@@ -48,7 +49,7 @@ async function save() {
 */
  /* CHATGPT kód */ 
 
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
 
     if (btnSave) {
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 async function save() {
     const nameInput = document.getElementById('name');
     const pswInput = document.getElementById('psw');
-    const pfpInput = document.getElementById('pfp');
+    const pfpInput = document.getElementById('pfp'); // Javítva az azonosító
 
     if (!nameInput || !pswInput || !pfpInput) {
         console.error("Nem található az egyik input elem.");
@@ -86,56 +87,29 @@ async function save() {
             credentials: 'include'
         });
 
-        const data = await res.json();
-        console.log(data);
+        const text = await res.text();
+        console.log("Szerver válasza:", text);
 
-        if (res.ok) {
-            alert(data.message);
-            window.location.href = '../home.html';
-        } else if (data.errors) {
-            let errorMessage = '';
-            for (let i = 0; i < data.errors.length; i++) {
-                errorMessage += `${data.errors[i].error}\n`;
+        try {
+            const data = JSON.parse(text);
+
+            if (res.ok) {
+                alert(data.message);
+                window.location.href = '../home.html';
+            } else if (data.errors) {
+                let errorMessage = data.errors.map(err => err.error).join('\n');
+                alert(errorMessage);
+            } else if (data.error) {
+                alert(data.error);
+            } else {
+                alert('Ismeretlen hiba');
             }
-            alert(errorMessage);
-        } else if (data.error) {
-            alert(data.error);
-        } else {
-            alert('Ismeretlen hiba');
+        } catch (jsonError) {
+            console.error("Nem JSON választ kaptunk:", text);
+            alert("Hibás válasz érkezett a szervertől.");
         }
     } catch (error) {
         console.error('Hiba történt:', error);
         alert('Hálózati hiba vagy szerverhiba történt.');
     }
-}
-
-
-try {
-    const res = await fetch('/api/editProfile', {
-        method: 'POST',
-        body: formData,
-        credentials: 'include'
-    });
-
-    const text = await res.text(); // Olvasd be szövegként
-    console.log("Szerver válasza:", text);
-
-    // Próbáld JSON-né alakítani
-    const data = JSON.parse(text);
-    console.log("JSON válasz:", data);
-
-    if (res.ok) {
-        alert(data.message);
-        window.location.href = '../home.html';
-    } else if (data.errors) {
-        let errorMessage = data.errors.map(err => err.error).join('\n');
-        alert(errorMessage);
-    } else if (data.error) {
-        alert(data.error);
-    } else {
-        alert('Ismeretlen hiba');
-    }
-} catch (error) {
-    console.error('Hiba történt:', error);
-    alert('Hálózati hiba vagy szerverhiba történt.');
 }
