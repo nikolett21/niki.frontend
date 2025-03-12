@@ -33,6 +33,6 @@ async function getpfp() {
     console.log(data);
     
     if (res.ok) {
-        btnPic.style.backgroundImage = `url('/uploads/${data[0].pfp}')`;
+        btnPic.style.backgroundImage = `url('/fotok/${data[0].pfp}')`;
     }
 }
