@@ -1,6 +1,7 @@
 const iconUser = document.getElementsByClassName('icon-user')[0];
 const iconLogout = document.getElementsByClassName('icon-logout')[0];
 
+
 iconLogout.addEventListener('click', logout);
 
 window.addEventListener('DOMContentLoaded', getpfp);
@@ -33,6 +34,6 @@ async function getpfp() {
     console.log(data);
     
     if (res.ok) {
-        btnPic.style.backgroundImage = `url('/fotok/${data[0].pfp}')`;
+        iconUser.style.backgroundImage = `url('/fotok/${data[0].pfp}')`;
     }
 }
