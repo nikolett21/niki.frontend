@@ -3,7 +3,7 @@ const btnSave = document.getElementsByClassName('save')[0];
 btnSave.addEventListener('click', save);
 
 async function save() {
-    const name = document.getElementById('nane').value;
+    const name = document.getElementById('name').value;
     const psw = document.getElementById('psw').value;
     const pfp = document.getElementById('file').files[0];
 
@@ -15,7 +15,7 @@ async function save() {
     }
 
     try {
-        const res = await fetch('/api/update', {
+        const res = await fetch('/api/editProfile', {
             method: 'POST',
             body: formData,
             credentials: 'include'
