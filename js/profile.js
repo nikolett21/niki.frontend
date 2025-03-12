@@ -46,6 +46,8 @@ async function save() {
 
 }
 */
+ /* CHATGPT kód */ 
+
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
 
@@ -105,4 +107,35 @@ async function save() {
         console.error('Hiba történt:', error);
         alert('Hálózati hiba vagy szerverhiba történt.');
     }
+}
+
+
+try {
+    const res = await fetch('/api/editProfile', {
+        method: 'POST',
+        body: formData,
+        credentials: 'include'
+    });
+
+    const text = await res.text(); // Olvasd be szövegként
+    console.log("Szerver válasza:", text);
+
+    // Próbáld JSON-né alakítani
+    const data = JSON.parse(text);
+    console.log("JSON válasz:", data);
+
+    if (res.ok) {
+        alert(data.message);
+        window.location.href = '../home.html';
+    } else if (data.errors) {
+        let errorMessage = data.errors.map(err => err.error).join('\n');
+        alert(errorMessage);
+    } else if (data.error) {
+        alert(data.error);
+    } else {
+        alert('Ismeretlen hiba');
+    }
+} catch (error) {
+    console.error('Hiba történt:', error);
+    alert('Hálózati hiba vagy szerverhiba történt.');
 }
