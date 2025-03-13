@@ -135,4 +135,4 @@ async function foglalas() {
 }
 
 // Eseményfigyelő hozzáadása a gombhoz
-document.getElementsByClassName("foglalasGomb")[0].addEventListener("click", foglalas);
+document.querySelector(".foglalasGomb")?.addEventListener("click", foglalas);
