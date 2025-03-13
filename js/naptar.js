@@ -13,7 +13,7 @@ function generateCalendar() {
     document.getElementById("prev-month").disabled = currentYear <= today.getFullYear() && currentMonth <= today.getMonth();
     document.getElementById("next-month").addEventListener("click", () => changeMonth(1));
     const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
-    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    const daysInMonth = new Date(currentYear, currentMonth ).getDate();
    
     const offset = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1;
     for (let i = 0; i < offset; i++) {
