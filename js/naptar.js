@@ -53,7 +53,7 @@ function generateTimeSlots(day) {
     const timeContainer = document.getElementById("time-slots");
     timeContainer.innerHTML = "";
     
-    const timeSlots = ["12:00", "13:00", "14:00", "15:00","17:00", "18:00", "19:00"];
+    const timeSlots = ["12:00", "14:00", "15:00","17:00", "18:00", "19:00"];
     timeSlots.forEach(time => {
         const timeElement = document.createElement("button");
         timeElement.classList.add("time-button");
@@ -100,7 +100,7 @@ async function foglalas() {
         });
         return;
     }
-
+    console.log("Foglalási adatok:", { selectedDay, selectedTime });
     // Convert the selected date to YYYY-MM-DD format
     const selectedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(selectedDay).padStart(2, '0')}`;
     const selectedTimeSlot = selectedTime;
