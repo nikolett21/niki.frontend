@@ -86,7 +86,7 @@ function renderCategories(foodCategories) {
         const menuItemAButtonSpan = document.createElement('span');
         menuItemAButtonSpan.textContent = 'Részletek';
 
-        menuItemAButton.append(menuItemAButton);
+        menuItemAButton.append(menuItemAButtonSpan);
         menuItemA.append(menuItemAButton);
         menuItemDiv.append(menuItemImg, menuItemP, menuItemA);
         categories.append(menuItemDiv);
