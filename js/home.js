@@ -45,6 +45,6 @@ async function getpfp() {
     console.log(data);
     
     if (res.ok) {
-        iconUser.style.backgroundImage = `url(/fotok/${data[0].pfp}')`; 
+        iconUser.style.backgroundImage = `url(/uploads/${data[0].pfp}')`; 
     }
 }
