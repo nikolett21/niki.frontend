@@ -11,7 +11,7 @@ function generateCalendar() {
     daysContainer.innerHTML = "";
     document.getElementById("current-month").textContent = `${currentYear} ${monthNames[currentMonth]}`; 
     document.getElementById("prev-month").disabled = currentYear <= today.getFullYear() && currentMonth <= today.getMonth();
-    document.getElementById("next-month").addEventListener("click", () => changeMonth(+1));
+    document.getElementById("next-month").addEventListener("click", () => changeMonth(1));
     const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
    
