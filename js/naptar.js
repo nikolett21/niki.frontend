@@ -11,9 +11,8 @@ function generateCalendar() {
     daysContainer.innerHTML = "";
     document.getElementById("current-month").textContent = `${currentYear} ${monthNames[currentMonth]}`; 
     document.getElementById("prev-month").disabled = currentYear <= today.getFullYear() && currentMonth <= today.getMonth();
-    document.getElementById("next-month").addEventListener("click", () => changeMonth(1));
     const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
-    const daysInMonth = new Date(currentYear, currentMonth ).getDate();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
    
     const offset = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1;
     for (let i = 0; i < offset; i++) {
@@ -101,7 +100,7 @@ async function foglalas() {
         });
         return;
     }
-    console.log("Foglalási adatok:", { selectedDay, selectedTime });
+
     // Convert the selected date to YYYY-MM-DD format
     const selectedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(selectedDay).padStart(2, '0')}`;
     const selectedTimeSlot = selectedTime;
@@ -135,4 +134,4 @@ async function foglalas() {
 }
 
 // Eseményfigyelő hozzáadása a gombhoz
-document.querySelector(".foglalasGomb")?.addEventListener("click", foglalas);
+document.getElementsByClassName("foglalasGomb")[0].addEventListener("click", foglalas);
