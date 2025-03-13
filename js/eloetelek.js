@@ -11,7 +11,8 @@ async function getFoodsByCategory() {
     }
 
     const kategoria_id = match[1]; // Például: "eloetelek"
-
+    console.log(kategoria_id);
+    
     try {
         const res = await fetch(`/api/getFoodsByCategory/${kategoria_id}`, {
             method: 'GET',
