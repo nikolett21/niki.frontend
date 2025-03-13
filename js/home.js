@@ -46,6 +46,6 @@ async function getpfp() {
     
     if (res.ok) {
         console.log(`${data[0].pfp}`)
-        iconUser.innerHTML = `<img src='url(/uploads/${data[0].pfp}' alt='${data[0].pfp}'>)`; 
+        iconUser.innerHTML = `<img src='/uploads/${data[0].pfp}' alt='${data[0].pfp}'>)`; 
     }
 }
