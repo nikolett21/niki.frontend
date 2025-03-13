@@ -11,7 +11,6 @@ function generateCalendar() {
     daysContainer.innerHTML = "";
     document.getElementById("current-month").textContent = `${currentYear} ${monthNames[currentMonth]}`; 
     document.getElementById("prev-month").disabled = currentYear <= today.getFullYear() && currentMonth <= today.getMonth();
-    document.getElementById("next-month").addEventListener("click", () => changeMonth(+1));
     const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
    
@@ -54,7 +53,7 @@ function generateTimeSlots(day) {
     const timeContainer = document.getElementById("time-slots");
     timeContainer.innerHTML = "";
     
-    const timeSlots = ["12:00", "13:00", "14:00", "15:00","17:00", "18:00", "19:00", "20:00"];
+    const timeSlots = ["12:00", "13:00", "14:00", "15:00","17:00", "18:00", "19:00"];
     timeSlots.forEach(time => {
         const timeElement = document.createElement("button");
         timeElement.classList.add("time-button");
