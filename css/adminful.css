@@ -13,7 +13,8 @@ body {
 /* --- a fejléc a menüvel --- */
 header {
     font-family: 'ADLaM Display', sans-serif;
-    background-color: #CDE7FF;
+    background-color: #04539c;
+    color: white;
     padding: 20px 30px;
     display: flex;
     align-items: center;
