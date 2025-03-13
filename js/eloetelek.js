@@ -48,7 +48,7 @@ function renderFoodsByCategory(foodsByCategory) {
         eloetelekItemDivP.textContent = `${food.name}`;
 
         const eloetelekItemDivPSpan = document.createElement('span');
-        eloetelekItemDivPSpan.textContent = `${food.price} Ft`;
+        eloetelekItemDivPSpan.textContent = ` ${food.price} Ft`;
 
         const eloetelekItemDivLeiras = document.createElement('div');
         eloetelekItemDivLeiras.classList.add('leiras');
