@@ -45,6 +45,7 @@ async function getpfp() {
     console.log(data);
     
     if (res.ok) {
+        console.log(`${data[0].pfp}`)
         iconUser.style.backgroundImage = `url(/uploads/${data[0].pfp}')`; 
     }
 }

@@ -1,4 +1,4 @@
-async function getPics() {
+async function getFoods() {
     const res = await fetch('/api/getFoods', {
         methot: 'GET',
         credentials: 'include'
