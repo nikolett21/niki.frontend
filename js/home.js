@@ -92,3 +92,4 @@ function renderCategories(foodCategories) {
         categories.append(menuItemDiv);
     });
 }
+
