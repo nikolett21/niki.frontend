@@ -6,7 +6,7 @@
   headers = {Access-Control-Allow-Origin = "*"}
 
 [[redirects]]
-  from = "/uploads/*"
+  from = "/foods/*"
   to = "https://nodejs214.dszcbaross.edu.hu/:splat"
   status = 200
   force = true

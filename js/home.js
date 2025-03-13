@@ -47,7 +47,7 @@ async function getpfp() {
     
     if (res.ok) {
         console.log(`${data[0].pfp}`)
-        iconUser.innerHTML = `<img src='/uploads/${data[0].pfp}' alt='${data[0].pfp}'>)`; 
+        iconUser.innerHTML = `<img src='/foods/${data[0].pfp}' alt='${data[0].pfp}'>)`; 
     }
 }
 
@@ -70,7 +70,7 @@ function renderCategories(foodCategories) {
         menuItemDiv.classList.add('menu-item');
 
         const menuItemImg = document.createElement('img');
-        menuItemImg.src = `/uploads/${category.category_img}`;
+        menuItemImg.src = `/foods/${category.category_img}`;
         menuItemImg.alt = `${category.nev}`;
 
         const menuItemP = document.createElement('p');
