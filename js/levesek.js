@@ -33,7 +33,7 @@ async function getFoodsByCategory() {
 }
 
 function renderFoodsByCategory(foodsByCategory) {
-    const levesek = document.getElementById('Levesek');
+    const levesek = document.getElementById('levesek');
     levesek.innerHTML = '';
 
     foodsByCategory.forEach(food => {
