@@ -71,7 +71,7 @@ header h1 {
     }
 }
 
-.levesek-item {
+.leves-item {
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -80,24 +80,24 @@ header h1 {
     transition: transform 0.2s;
 }
 
-.levesek-item:hover {
+.leves-item:hover {
     transform: scale(1.05);
 }
 
-.levesek-item img {
+.leves-item img {
     width: 300px;
     height: 500px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.levesek-item p {
+.leves-item p {
     margin: 10px 0 0;
     font-size: 20px;
     text-align: center;
 }
 
-.levesek-item span {
+.leves-item span {
     color: #3235e9;
 }
 p{
@@ -106,19 +106,19 @@ p{
 
 
 
-.levesek-item {
+.leves-item {
     position: relative;
     width: 300px; /* Állítsd be a megfelelő méretet */
     overflow: hidden;
     text-align: center;
 }
 
-.levesek-item img {
+.leves-item img {
     width: 100%; /* Kép méretének igazítása */
     transition: filter 0.3s ease-in-out;
 }
 
-.levesek-item:hover img {
+.leves-item:hover img {
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
@@ -136,7 +136,7 @@ p{
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.levesek-item:hover .leiras p {
+.leves-item:hover .leiras p {
     visibility: visible;
     opacity: 1;
 }

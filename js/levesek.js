@@ -38,7 +38,7 @@ function renderFoodsByCategory(foodsByCategory) {
 
     foodsByCategory.forEach(food => {
         const levesekItemDiv = document.createElement('div');
-        levesekItemDiv.classList.add('levesek-item');
+        levesekItemDiv.classList.add('leves-item');
 
         const levesekItemDivImg = document.createElement('img');
         levesekItemDivImg.src = `/foods/${food.img}`;
