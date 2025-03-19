@@ -55,23 +55,23 @@ header h1 {
     
 }
 
-.leves-grid {
+.levesek-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 @media (max-width: 768px) {
-    .leves-grid {
+    .levesek-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 oszlop tableten */
     }
 }
 @media (max-width: 480px) {
-    .leves-grid {
+    .levesek-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 oszlop mobilon */
     }
 }
 
-.leves-item {
+.levesek-item {
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -80,24 +80,24 @@ header h1 {
     transition: transform 0.2s;
 }
 
-.leves-item:hover {
+.levesek-item:hover {
     transform: scale(1.05);
 }
 
-.leves-item img {
+.levesek-item img {
     width: 300px;
     height: 500px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.leves-item p {
+.levesek-item p {
     margin: 10px 0 0;
     font-size: 20px;
     text-align: center;
 }
 
-.leves-item span {
+.levesek-item span {
     color: #3235e9;
 }
 p{
@@ -106,19 +106,19 @@ p{
 
 
 
-.leves-item {
+.levesek-item {
     position: relative;
     width: 300px; /* Állítsd be a megfelelő méretet */
     overflow: hidden;
     text-align: center;
 }
 
-.leves-item img {
+.levesek-item img {
     width: 100%; /* Kép méretének igazítása */
     transition: filter 0.3s ease-in-out;
 }
 
-.leves-item:hover img {
+.levesek-item:hover img {
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
@@ -136,7 +136,7 @@ p{
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.leves-item:hover .leiras p {
+.levesek-item:hover .leiras p {
     visibility: visible;
     opacity: 1;
 }

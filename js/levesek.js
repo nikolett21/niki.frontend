@@ -33,12 +33,12 @@ async function getFoodsByCategory() {
 }
 
 function renderFoodsByCategory(foodsByCategory) {
-    const levesek = document.getElementById('leves');
+    const levesek = document.getElementById('levesek');
     levesek.innerHTML = '';
 
     foodsByCategory.forEach(food => {
         const levesekItemDiv = document.createElement('div');
-        levesekItemDiv.classList.add('leves-item');
+        levesekItemDiv.classList.add('levesek-item');
 
         const levesekItemDivImg = document.createElement('img');
         levesekItemDivImg.src = `/foods/${food.img}`;
