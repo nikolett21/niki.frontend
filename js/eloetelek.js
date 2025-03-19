@@ -32,8 +32,6 @@ async function getFoodsByCategory() {
     }
 }
 
-
-
 function renderFoodsByCategory(foodsByCategory) {
     const eloetelek = document.getElementById('eloetelek');
     eloetelek.innerHTML = '';
