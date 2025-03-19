@@ -53,24 +53,24 @@ header h1 {
     
 }
 
-.desszert-grid {
+.desszertek-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 @media (max-width: 768px) {
-    .desszert-grid {
+    .desszertek-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 oszlop tableten */
     }
 }
 @media (max-width: 480px) {
-    .desszert-grid {
+    .desszertek-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 oszlop mobilon */
     }
 }
 
 
-.desszert-item{
+.desszertek-item{
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -80,11 +80,11 @@ header h1 {
 }
 
 
-.desszert-item :hover {
+.desszertek-item :hover {
     transform: scale(1.05);
 }
 
-.desszert-item img {
+.desszertek-item img {
     width: 300px;
     height: 500px;
     object-fit: cover;
@@ -97,7 +97,7 @@ header h1 {
     text-align: center;
 }
 
-.desszert-item  span {
+.desszertek-item  span {
     color: #3235e9;
 }
 p{
@@ -105,19 +105,19 @@ p{
 }
 
 
-.desszert-item {
+.desszertek-item {
     position: relative;
     width: 300px; /* Állítsd be a megfelelő méretet */
     overflow: hidden;
     text-align: center;
 }
 
-.desszert-item img {
+.desszertek-item img {
     width: 100%; /* Kép méretének igazítása */
     transition: filter 0.3s ease-in-out;
 }
 
-.desszert-item:hover img {
+.desszertek-item:hover img {
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
@@ -135,7 +135,7 @@ p{
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.desszert-item:hover .leiras p {
+.desszertek-item:hover .leiras p {
     visibility: visible;
     opacity: 1;
 }
