@@ -33,7 +33,7 @@ async function getFoodsByCategory() {
 }
 
 function renderFoodsByCategory(foodsByCategory) {
-    const eloetelek = document.getElementById('eloetelek');
+    const eloetelek = document.getElementById('Eloetelek');
     eloetelek.innerHTML = '';
 
     foodsByCategory.forEach(food => {
