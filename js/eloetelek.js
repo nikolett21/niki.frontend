@@ -10,7 +10,7 @@ async function getFoodsByCategory() {
         return;
     }
 
-    const kategoria_id = match[1]; // Például: "eloetelek"
+    const kategoria_id = match[1]; // Például: "Előételek"
     console.log(kategoria_id);
     
     try {
@@ -33,32 +33,32 @@ async function getFoodsByCategory() {
 }
 
 function renderFoodsByCategory(foodsByCategory) {
-    const eloetelek = document.getElementById('eloetelek');
-    eloetelek.innerHTML = '';
+    const Előételek = document.getElementById('Előételek');
+    Előételek.innerHTML = '';
 
     foodsByCategory.forEach(food => {
-        const eloetelekItemDiv = document.createElement('div');
-        eloetelekItemDiv.classList.add('eloetelek-item');
+        const ElőételekItemDiv = document.createElement('div');
+        ElőételekItemDiv.classList.add('Előételek-item');
 
-        const eloetelekItemDivImg = document.createElement('img');
-        eloetelekItemDivImg.src = `/foods/${food.img}`;
-        eloetelekItemDivImg.alt = `${food.name}`;
+        const ElőételekItemDivImg = document.createElement('img');
+        ElőételekItemDivImg.src = `/foods/${food.img}`;
+        ElőételekItemDivImg.alt = `${food.name}`;
 
-        const eloetelekItemDivP = document.createElement('p');
-        eloetelekItemDivP.textContent = `${food.name}`;
+        const ElőételekItemDivP = document.createElement('p');
+        ElőételekItemDivP.textContent = `${food.name}`;
 
-        const eloetelekItemDivPSpan = document.createElement('span');
-        eloetelekItemDivPSpan.textContent = ` ${food.price} Ft`;
+        const ElőételekItemDivPSpan = document.createElement('span');
+        ElőételekItemDivPSpan.textContent = ` ${food.price} Ft`;
 
-        const eloetelekItemDivLeiras = document.createElement('div');
-        eloetelekItemDivLeiras.classList.add('leiras');
+        const ElőételekItemDivLeiras = document.createElement('div');
+        ElőételekItemDivLeiras.classList.add('leiras');
 
-        const eloetelekItemDivLeirasP = document.createElement('p');
-        eloetelekItemDivLeirasP.textContent = `${food.leiras}`;
+        const ElőételekItemDivLeirasP = document.createElement('p');
+        ElőételekItemDivLeirasP.textContent = `${food.leiras}`;
 
-        eloetelekItemDivLeiras.append(eloetelekItemDivLeirasP);
-        eloetelekItemDivP.append(eloetelekItemDivPSpan);
-        eloetelekItemDiv.append(eloetelekItemDivImg, eloetelekItemDivP, eloetelekItemDivLeiras);
-        eloetelek.append(eloetelekItemDiv);
+        ElőételekItemDivLeiras.append(ElőételekItemDivLeirasP);
+        ElőételekItemDivP.append(ElőételekItemDivPSpan);
+        ElőételekItemDiv.append(ElőételekItemDivImg, ElőételekItemDivP, ElőételekItemDivLeiras);
+        Előételek.append(ElőételekItemDiv);
     });
 }
