@@ -2,7 +2,7 @@ body {
     font-family: 'ADLaM Display', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color:#f9f9f9;
 }
 
 .container {
@@ -22,10 +22,6 @@ button {
     padding: 10px 20px;
     background-color: #CDE7FF;
     border-radius: 20px;
-}
-div {
-    align-items: center;
-    text-align: center;
 }
    button:hover {
         background-color: rgb(8, 62, 163);
@@ -56,13 +52,13 @@ header h1 {
     background-color: transparent;
     border: none;
     cursor: pointer;
+
 }
 
 .uditok-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 15px;
+    gap: 30px;
 }
 @media (max-width: 768px) {
     .uditok-grid {
@@ -75,6 +71,7 @@ header h1 {
     }
 }
 
+
 .uditok-item {
     text-align: center;
     background-color: #f9f9f9;
@@ -84,25 +81,25 @@ header h1 {
     transition: transform 0.2s;
 }
 
-.uditok:hover {
+.uditok-item:hover {
     transform: scale(1.05);
 }
 
-.uditok img {
-    width: 250px;
-    height: 250px;
+.uditok-item img {
+    width: 300px;
+    height: 500px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.uditok p {
+.uditok-item p {
     margin: 10px 0 0;
     font-size: 25px;
     font-size: 20px;
     text-align: center;
 }
 
-.uditok span {
+.uditok-item span {
     color: #3235e9;
 }
 
@@ -110,4 +107,40 @@ h3 {
     color: gray;
     text-align: right;
     font-weight:lighter;
+}
+
+
+.uditok-item {
+    position: relative;
+    width: 300px; /* Állítsd be a megfelelő méretet */
+    overflow: hidden;
+    text-align: center;
+}
+
+.uditok-item img {
+    width: 100%; /* Kép méretének igazítása */
+    transition: filter 0.3s ease-in-out;
+}
+
+.uditok-item:hover img {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.leiras p {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.uditok-item:hover .leiras p {
+    visibility: visible;
+    opacity: 1;
 }
