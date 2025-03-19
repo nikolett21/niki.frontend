@@ -28,7 +28,7 @@ async function getFoodsByCategory() {
 
         renderFoodsByCategory(foodsByCategory);
     } catch (error) {
-        console.error("Hiba történt:", error);
+        console.error("Hiba történt:", error); 
     }
 }
 
