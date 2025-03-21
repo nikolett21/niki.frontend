@@ -89,6 +89,12 @@ function generateTimeSlots(day) {
     });
 }
 
+// Az oldal betöltésekor jelenítsük meg a kezdeti szöveget
+document.addEventListener("DOMContentLoaded", () => {
+    generateCalendar();
+    document.getElementById("time-slots").innerHTML = "<h3>Válassz egy napot!</h3>";
+});
+
 function generateTimeSlots(day) {
     const timeContainer = document.getElementById("time-slots");
     timeContainer.innerHTML = "";
