@@ -240,7 +240,7 @@ footer address {
 .payment-methods img {
     width: 80px;
     height: 40px;
-
+    border-radius: 10px;
 }
 
 .menu-toggle {
