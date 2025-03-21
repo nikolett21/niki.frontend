@@ -45,18 +45,18 @@ function selectDay(day) {
     const dayElements = document.querySelectorAll(".day");
     const clickedDay = Array.from(dayElements).find(el => el.textContent == day);
 
-    // Ha a kiválasztott nap már ki van jelölve, akkor eltávolítjuk a kijelölést
+    // Ha ugyanarra a napra kattintunk, eltávolítjuk a kijelölést
     if (clickedDay.classList.contains("selected")) {
         clickedDay.classList.remove("selected");
-        document.getElementById("selected-date").style.display = 'none';
+        document.getElementById("selected-date").style.display = 'none'; // A nap neve és dátuma eltűnik
         document.getElementById("selected-time").textContent = "";
-        selectedDay = null;
+        selectedDay = null; // Kijelölés törlése
     } else {
-        // Minden nap kijelölésének eltávolítása
+        // Minden más nap kijelölését eltávolítjuk
         dayElements.forEach(el => el.classList.remove("selected"));
         clickedDay.classList.add("selected");
 
-        // A kijelölt nap nevét és dátumát megjelenítjük
+        // A kiválasztott nap nevét és dátumát megjelenítjük
         const selectedDate = new Date(currentYear, currentMonth, day);
         const dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
         const dayName = dayNames[selectedDate.getDay()];
@@ -64,11 +64,11 @@ function selectDay(day) {
         document.getElementById("selected-date").style.display = 'block';
         document.getElementById("selected-date").textContent = `Kiválasztott nap: ${dayName}. ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}.`;
 
-        // Ne jelenjen meg időpont kijelölés
+        // Időpont kijelölés eltávolítása
         document.getElementById("selected-time").textContent = "";
 
         generateTimeSlots(day);
-        selectedDay = day; // Globális változó frissítése
+        selectedDay = day; // Kiválasztott nap elmentése
     }
 }
 
