@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Megjelenítjük a dátumot és a nap nevét
             const selectedDateText = document.getElementById('selected-date');
             selectedDateText.style.display = 'block';
-            selectedDateText.textContent = `Kiválasztott nap: ${dayName}. ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}.`;
+            selectedDateText.textContent = `Kiválasztott nap: ${dayName} ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}`;
         });
     });
 });
