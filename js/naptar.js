@@ -51,6 +51,9 @@ function selectDay(day) {
         document.getElementById("selected-date").style.display = 'none'; // A nap neve és dátuma eltűnik
         document.getElementById("selected-time").textContent = "";
         selectedDay = null; // Kijelölés törlése
+
+        // Időpontok elrejtése és szöveg megjelenítése
+        document.getElementById("time-slots").innerHTML = "<h3>Válassz egy napot!</h3>";
     } else {
         // Minden más nap kijelölését eltávolítjuk
         dayElements.forEach(el => el.classList.remove("selected"));
@@ -154,32 +157,6 @@ async function foglalas() {
         console.error('Error:', error);
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    const days = document.querySelectorAll('.day');
-
-    days.forEach(function(day) {
-        day.addEventListener('click', function() {
-            // Lekérjük a hónapot, napot és évet
-            const currentMonth = document.getElementById('current-month').textContent;
-            const year = parseInt(currentMonth.split(' ')[0]);
-            const monthNames = ["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"];
-            const month = monthNames.indexOf(currentMonth.split(' ')[1]);
-
-            // A kiválasztott nap dátumát
-            const selectedDate = new Date(year, month, day.textContent);
-
-            // Nap neve
-            const dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
-            const dayName = dayNames[selectedDate.getDay()];
-
-            // Megjelenítjük a dátumot és a nap nevét
-            const selectedDateText = document.getElementById('selected-date');
-            selectedDateText.style.display = 'block';
-            selectedDateText.textContent = `Kiválasztott nap: ${dayName}. ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}.`;
-        });
-    });
-});
 
 // Eseményfigyelő hozzáadása a gombhoz
 document.getElementsByClassName("foglalasGomb")[0].addEventListener("click", foglalas);
