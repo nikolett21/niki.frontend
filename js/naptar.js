@@ -45,7 +45,7 @@ function selectDay(day) {
     const dayElements = document.querySelectorAll(".day");
     const clickedDay = Array.from(dayElements).find(el => el.textContent == day);
 
-    // Ha ugyanarra a napra kattintunk, eltávolítjuk a kijelölést
+    // Ha ugyanarra a napra kattintunk, eltávolítjuk a kijelölést és a nap nevét/dátumát
     if (clickedDay.classList.contains("selected")) {
         clickedDay.classList.remove("selected");
         document.getElementById("selected-date").style.display = 'none'; // A nap neve és dátuma eltűnik
