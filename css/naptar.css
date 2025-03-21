@@ -175,6 +175,13 @@ nav a {
     font-size: 1.5rem;
 }
 
+.usericon {
+    padding-top: 30px;
+    margin-top: 10px;
+    width: 10px;
+    height: 10px;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
