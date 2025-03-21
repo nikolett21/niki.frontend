@@ -131,6 +131,7 @@ nav a {
     gap: 15px;
     padding: 20px;
     background-color: #fff;
+    border-radius: 25px;
 }
 
 .menu-item {
