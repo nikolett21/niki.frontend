@@ -153,8 +153,12 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    
   }
+
+  .usericon {
+    width: 30px;
+    height: 30px;
+}
   
   .button span {
     cursor: pointer;
@@ -251,11 +255,6 @@ footer address {
         background-color: white;
         padding: 10px;
         border-radius: 5px;
-    }
-
-    .usericon {
-        width: 30px;
-        height: 30px;
     }
 
     #menu-toggle:checked + .hamburger-menu + nav {
