@@ -134,15 +134,27 @@ async function foglalas() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // A napokra kattintva történő eseménykezelő hozzáadása
     const days = document.querySelectorAll('.day');
-    
+
     days.forEach(function(day) {
         day.addEventListener('click', function() {
-            // A "Mai nap" szöveg megjelenítése
+            // Lekérjük a hónapot, napot és évet
+            const currentMonth = document.getElementById('current-month').textContent;
+            const year = parseInt(currentMonth.split(' ')[0]);
+            const monthNames = ["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"];
+            const month = monthNames.indexOf(currentMonth.split(' ')[1]);
+
+            // A kiválasztott nap dátumát
+            const selectedDate = new Date(year, month, day.textContent);
+
+            // Nap neve
+            const dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
+            const dayName = dayNames[selectedDate.getDay()];
+
+            // Megjelenítjük a dátumot és a nap nevét
             const selectedDateText = document.getElementById('selected-date');
             selectedDateText.style.display = 'block';
-            selectedDateText.textContent = 'Kiválasztott nap: ' + day.textContent;
+            selectedDateText.textContent = `Kiválasztott nap: ${dayName}, ${selectedDate.getFullYear()} ${monthNames[selectedDate.getMonth()]} ${selectedDate.getDate()}`;
         });
     });
 });
