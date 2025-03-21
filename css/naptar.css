@@ -5,7 +5,11 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url(/foods/hatter.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     background-size:100% 100%;
     width: 100%;
     overflow-x: hidden;
@@ -155,7 +159,10 @@ nav a {
 .icon-user,
 .icon-logout {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    gap: 15px; 
+    padding-right: 20px; 
 }
 
 @media (max-width: 768px) {
