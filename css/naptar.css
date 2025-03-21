@@ -167,6 +167,8 @@ nav a i {
 
 .menu-toggle {
     visibility: hidden;
+    align-items: center;
+    text-align: center;
 }
 
 .icon-home,
