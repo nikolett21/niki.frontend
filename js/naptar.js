@@ -56,9 +56,17 @@ function selectDay(day) {
         dayElements.forEach(el => el.classList.remove("selected"));
         clickedDay.classList.add("selected");
 
-        // Ne jelenjen meg a dátum és a nap neve
-        document.getElementById("selected-date").style.display = 'none';
+        // A kijelölt nap nevét és dátumát megjelenítjük
+        const selectedDate = new Date(currentYear, currentMonth, day);
+        const dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
+        const dayName = dayNames[selectedDate.getDay()];
+
+        document.getElementById("selected-date").style.display = 'block';
+        document.getElementById("selected-date").textContent = `Kiválasztott nap: ${dayName}. ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}.`;
+
+        // Ne jelenjen meg időpont kijelölés
         document.getElementById("selected-time").textContent = "";
+
         generateTimeSlots(day);
         selectedDay = day; // Globális változó frissítése
     }
