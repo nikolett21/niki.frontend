@@ -88,24 +88,31 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #CDE7FF;
-    color: #CDE7FF;
-    padding: 10px 10px;
-    position: sticky;
+    color: black;
+    padding: 10px 20px;
+    position: fixed;
     top: 0;
-    height: 110px;
+    left: 0;
+    width: 100%;
+    height: 80px; 
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-logo {
-    font-size: 34px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
     font-weight: bold;
     color: black;
 }
 
 .menu-logo img {
-    border-radius: 50px;
-    width: 150px;
+    border-radius: 50%;
+    width: 80px; 
+    height: auto;
 }
+
 .icon-home:hover,
 .icon-user:hover,
 .icon-logout:hover,
@@ -145,7 +152,7 @@ nav {
 nav a {
     color: black;
     text-decoration: none;
-    font-size: 38px;
+    font-size: 24px;
 }
 
 .icon-home,
@@ -195,11 +202,12 @@ nav a {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        right: 20px;
+        top: 80px;
+        right: 10px;
         background-color: white;
         padding: 10px;
         border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     #menu-toggle:checked + .hamburger-menu + nav {
