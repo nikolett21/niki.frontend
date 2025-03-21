@@ -253,6 +253,10 @@ footer address {
         display: flex;
     }
 
+    .logo {
+        display: none;
+    }
+
     nav {
         display: none;
         flex-direction: column;
