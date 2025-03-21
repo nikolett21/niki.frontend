@@ -133,12 +133,17 @@ async function foglalas() {
     }
 }
 
-// A napokra kattintva történő eseménykezelő hozzáadása
-document.querySelectorAll('.day').forEach(function(day) {
-    day.addEventListener('click', function() {
-        // A "Mai nap" szöveg megjelenítése
-        document.getElementById('selected-date').style.display = 'block';
-        document.getElementById('selected-date').textContent = 'Kiválasztott nap: ' + day.textContent;
+document.addEventListener('DOMContentLoaded', function() {
+    // A napokra kattintva történő eseménykezelő hozzáadása
+    const days = document.querySelectorAll('.day');
+    
+    days.forEach(function(day) {
+        day.addEventListener('click', function() {
+            // A "Mai nap" szöveg megjelenítése
+            const selectedDateText = document.getElementById('selected-date');
+            selectedDateText.style.display = 'block';
+            selectedDateText.textContent = 'Kiválasztott nap: ' + day.textContent;
+        });
     });
 });
 
