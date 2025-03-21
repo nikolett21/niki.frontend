@@ -51,6 +51,9 @@ function selectDay(day) {
         document.getElementById("selected-date").style.display = 'none'; // A nap neve és dátuma eltűnik
         document.getElementById("selected-time").textContent = "";
         selectedDay = null; // Kijelölés törlése
+
+        // Időpontok elrejtése és szöveg megjelenítése
+        document.getElementById("time-slots").innerHTML = "<h3>Válassz egy napot!</h3>";
     } else {
         // Minden más nap kijelölését eltávolítjuk
         dayElements.forEach(el => el.classList.remove("selected"));
@@ -70,6 +73,20 @@ function selectDay(day) {
         generateTimeSlots(day);
         selectedDay = day; // Kiválasztott nap elmentése
     }
+}
+
+function generateTimeSlots(day) {
+    const timeContainer = document.getElementById("time-slots");
+    timeContainer.innerHTML = ""; // Töröljük a korábbi tartalmat
+    
+    const timeSlots = ["12:00", "14:00", "15:00","17:00", "18:00", "19:00"];
+    timeSlots.forEach(time => {
+        const timeElement = document.createElement("button");
+        timeElement.classList.add("time-button");
+        timeElement.textContent = time;
+        timeElement.onclick = () => bookTimeSlot(day, time, timeElement);
+        timeContainer.appendChild(timeElement);
+    });
 }
 
 function generateTimeSlots(day) {
