@@ -52,8 +52,11 @@ function selectDay(day) {
         document.getElementById("selected-time").textContent = "";
         selectedDay = null;
     } else {
+        // Minden nap kijelölésének eltávolítása
         dayElements.forEach(el => el.classList.remove("selected"));
         clickedDay.classList.add("selected");
+
+        // Kiírás frissítése
         document.getElementById("selected-date").textContent = `${currentYear} ${monthNames[currentMonth]} ${day}.`;
         document.getElementById("selected-time").textContent = "";
         generateTimeSlots(day);
