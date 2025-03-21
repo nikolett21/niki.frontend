@@ -253,6 +253,11 @@ footer address {
         border-radius: 5px;
     }
 
+    .usericon {
+        width: 30px;
+        height: 30px;
+    }
+
     #menu-toggle:checked + .hamburger-menu + nav {
         display: flex;
     }
