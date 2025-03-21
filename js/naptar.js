@@ -1,4 +1,5 @@
 import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/+esm';
+
 let currentYear = 2025;
 let currentMonth = 2; // Március (0-indexelve: január = 0)
 const today = new Date();
@@ -41,12 +42,22 @@ function generateCalendar() {
 }
 
 function selectDay(day) {
-    document.querySelectorAll(".day").forEach(el => el.classList.remove("selected"));
-    event.target.classList.add("selected");
-    document.getElementById("selected-date").textContent = `${currentYear} ${monthNames[currentMonth]} ${day}.`;
-    document.getElementById("selected-time").textContent = "";
-    generateTimeSlots(day);
-    selectedDay = day; // Globális változó frissítése
+    const dayElements = document.querySelectorAll(".day");
+    dayElements.forEach(el => el.classList.remove("selected"));
+    
+    const clickedDay = Array.from(dayElements).find(el => el.textContent == day);
+    if (clickedDay.classList.contains("selected")) {
+        clickedDay.classList.remove("selected");
+        document.getElementById("selected-date").style.display = 'none';
+        document.getElementById("selected-time").textContent = "";
+        selectedDay = null;
+    } else {
+        clickedDay.classList.add("selected");
+        document.getElementById("selected-date").textContent = `${currentYear} ${monthNames[currentMonth]} ${day}.`;
+        document.getElementById("selected-time").textContent = "";
+        generateTimeSlots(day);
+        selectedDay = day; // Globális változó frissítése
+    }
 }
 
 function generateTimeSlots(day) {
@@ -154,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Megjelenítjük a dátumot és a nap nevét
             const selectedDateText = document.getElementById('selected-date');
             selectedDateText.style.display = 'block';
-            selectedDateText.textContent = `Kiválasztott nap: ${dayName} ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}`;
+            selectedDateText.textContent = `Kiválasztott nap: ${dayName}. ${selectedDate.getFullYear()}. ${monthNames[selectedDate.getMonth()]}. ${selectedDate.getDate()}.`;
         });
     });
 });
