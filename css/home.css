@@ -18,6 +18,10 @@ body {
     color: #04539c;
     
 }
+
+.categories {
+    border-radius: 25px;
+}
 header {
     display: flex;
     justify-content: space-between;
