@@ -56,8 +56,8 @@ function selectDay(day) {
         dayElements.forEach(el => el.classList.remove("selected"));
         clickedDay.classList.add("selected");
 
-        // Kiírás frissítése
-        document.getElementById("selected-date").textContent = `${currentYear} ${monthNames[currentMonth]} ${day}.`;
+        // Ne jelenjen meg a dátum és a nap neve
+        document.getElementById("selected-date").style.display = 'none';
         document.getElementById("selected-time").textContent = "";
         generateTimeSlots(day);
         selectedDay = day; // Globális változó frissítése
