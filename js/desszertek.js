@@ -12,7 +12,7 @@ async function getFoodsByCategory() {
     }
 
 
-    const kategoria_id = match[1]; // Például: "desszertek"
+    const kategoria_id = match[1];
     console.log(kategoria_id);
     
     try {

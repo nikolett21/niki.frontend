@@ -11,7 +11,7 @@ async function getFoodsByCategory() {
         return console.log("Nincs találat");
     }
 
-    const kategoria_id = match[1]; // Például: "levesek"
+    const kategoria_id = match[1]; 
     console.log(kategoria_id);
 
     try {
