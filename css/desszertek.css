@@ -61,11 +61,19 @@ header h1 {
 @media (max-width: 768px) {
     .desszertek-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 oszlop tableten */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
 @media (max-width: 480px) {
     .desszertek-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 oszlop mobilon */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
 
