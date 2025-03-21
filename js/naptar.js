@@ -43,15 +43,16 @@ function generateCalendar() {
 
 function selectDay(day) {
     const dayElements = document.querySelectorAll(".day");
-    dayElements.forEach(el => el.classList.remove("selected"));
-    
     const clickedDay = Array.from(dayElements).find(el => el.textContent == day);
+
+    // Ha a kiválasztott nap már ki van jelölve, akkor eltávolítjuk a kijelölést
     if (clickedDay.classList.contains("selected")) {
         clickedDay.classList.remove("selected");
         document.getElementById("selected-date").style.display = 'none';
         document.getElementById("selected-time").textContent = "";
         selectedDay = null;
     } else {
+        dayElements.forEach(el => el.classList.remove("selected"));
         clickedDay.classList.add("selected");
         document.getElementById("selected-date").textContent = `${currentYear} ${monthNames[currentMonth]} ${day}.`;
         document.getElementById("selected-time").textContent = "";
@@ -81,7 +82,6 @@ function bookTimeSlot(day, time, element) {
     document.getElementById("selected-time").textContent = `Kiválasztott időpont: ${time}`;
     selectedTime = time; // Globális változó frissítése
 }
-
 
 function changeMonth(direction) {
     currentMonth += direction;
