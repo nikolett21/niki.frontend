@@ -116,13 +116,13 @@ p{
 
 .desszertek-item {
     position: relative;
-    width: 300px; /* Állítsd be a megfelelő méretet */
+    width: 300px; 
     overflow: hidden;
     text-align: center;
 }
 
 .desszertek-item img {
-    width: 100%; /* Kép méretének igazítása */
+    width: 100%; 
     transition: filter 0.3s ease-in-out;
 }
 
@@ -144,7 +144,7 @@ p{
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.desszertek-item:hover .leiras p {
+.desszertek-item.active .leiras p {
     visibility: visible;
     opacity: 1;
 }
