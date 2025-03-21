@@ -3,12 +3,14 @@ window.addEventListener('DOMContentLoaded', getFoodsByCategory);
 async function getFoodsByCategory() {
     // Az aktuális URL-ből kinyerjük a kategória nevet
     const url = window.location.href;
-    const match = url.match(/\/([^/]+)\.html/);
+    const match = url.match(/\/([^/]+)(?:\.html)?$/);
 
-    if (!match) {
-        console.error("Nem sikerült kinyerni a kategória ID-t az URL-ből.");
-        return;
+    if (match) {
+        console.log(match[1]); 
+    } else {
+        return console.log("Nincs találat");
     }
+
 
     const kategoria_id = match[1]; // Például: "savanyusagok"
     console.log(kategoria_id);
