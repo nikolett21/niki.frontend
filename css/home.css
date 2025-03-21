@@ -92,7 +92,7 @@ nav a {
 
 .fejlec {
     text-align: center;
-    background-image: url('/fotok/hatter.jpeg');
+    background-image: url('/foods/hatter.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -157,7 +157,7 @@ button {
 
   .usericon {
     padding-top: 30px;
-    margin-top: 100px;
+    margin-top: 10px;
     width: 10px;
     height: 10px;
 }
