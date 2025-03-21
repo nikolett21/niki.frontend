@@ -19,7 +19,6 @@ body {
     max-width: 90%;
 }
 
-/* Naptár */
 .calendar {
     width: 300px;
     margin-right: 20px;
@@ -69,12 +68,10 @@ body {
     pointer-events: none;
 }
 
-/* Foglalási szekció */
 .booking-section {
     text-align: left;
 }
 
-/* Gombok */
 .time-button,
 .foglalasGomb {
     background-color: #04539c;
@@ -86,6 +83,97 @@ body {
     cursor: pointer;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CDE7FF;
+    color: #CDE7FF;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    height: 110px;
+    z-index: 1000;
+}
+
+.menu-logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+}
+
+.menu-logo img {
+    border-radius: 50px;
+    width: 150px;
+}
+.icon-home:hover,
+.icon-user:hover,
+.icon-logout:hover,
+.icon-info:hover{
+    transform: scale(1.1);
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    /* Függőlegesen középre */
+    left: 50%;
+    /* Vízszintesen középre */
+    transform: translate(-50%, -50%);
+    /* Pontos középre igazítás */
+    width: 100px;
+    /* Logo mérete */
+    height: auto;
+}
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 38px;
+}
+
+.icon-home,
+.icon-user,
+.icon-logout {
+    display: flex;
+    align-items: center;
+}
+
+.fejlec {
+    text-align: center;
+    background-image: url('/foods/hatter.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #4b79a2;
+    padding: 50px 20px;
+}
+
+.fejlec h1 {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.fejlec p {
+    font-size: 1.5rem;
+}
 
 @media (max-width: 768px) {
     .container {
