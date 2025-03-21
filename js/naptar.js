@@ -133,5 +133,14 @@ async function foglalas() {
     }
 }
 
+// A napokra kattintva történő eseménykezelő hozzáadása
+document.querySelectorAll('.day').forEach(function(day) {
+    day.addEventListener('click', function() {
+        // A "Mai nap" szöveg megjelenítése
+        document.getElementById('selected-date').style.display = 'block';
+        document.getElementById('selected-date').textContent = 'Kiválasztott nap: ' + day.textContent;
+    });
+});
+
 // Eseményfigyelő hozzáadása a gombhoz
 document.getElementsByClassName("foglalasGomb")[0].addEventListener("click", foglalas);
