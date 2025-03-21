@@ -64,3 +64,9 @@ function renderFoodsByCategory(foodsByCategory) {
         desszertek.append(desszertekItemDiv);
     });
 }
+
+document.querySelectorAll('.desszertek-item').forEach(item => {
+    item.addEventListener('click', function () {
+        this.classList.toggle('active'); 
+    });
+});
