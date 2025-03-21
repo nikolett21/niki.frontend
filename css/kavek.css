@@ -72,7 +72,7 @@ header h1 {
 }
 @media (max-width: 480px) {
     .kavek-grid {
-        grid-template-columns: repeat(1, 1fr); /* 2 oszlop tableten */
+        grid-template-columns: repeat(1, 1fr); 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -113,13 +113,13 @@ header h1 {
 
 .kavek-item {
     position: relative;
-    width: 300px; /* Állítsd be a megfelelő méretet */
+    width: 300px; 
     overflow: hidden;
     text-align: center;
 }
 
 .kavek-item img {
-    width: 100%; /* Kép méretének igazítása */
+    width: 100%; 
     transition: filter 0.3s ease-in-out;
 }
 
@@ -141,7 +141,8 @@ header h1 {
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.kavek-item:hover .leiras p {
+.kavek-item:hover .leiras p,
+.kavek-item.active .leiras p {
     visibility: visible;
     opacity: 1;
 }

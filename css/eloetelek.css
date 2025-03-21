@@ -127,37 +127,15 @@ text-align: center;
     color: #3235e9;   
 }
 
-/* .eloetelek-item:hover, .eloetelek-item img{
-    filter: blur(5px);
-    --webkit-filter: blur(5px);
-}
-
-.eloetelek-item:hover p{
-    filter: blur(0px);
-    --webkit-filter: blur(0px);
-    visibility: visible;
-    width: 262px;
-    color: black;
-    text-align: center;
-}
-
-.leiras p{
-    filter: blur(0px);
-    --webkit-filter: blur(0px);
-    text-align: center;
-    position: absolute;
-    visibility: hidden;
-    top: 0%;
-} */
 .eloetelek-item {
     position: relative;
-    width: 300px; /* Állítsd be a megfelelő méretet */
+    width: 300px; 
     overflow: hidden;
     text-align: center;
 }
 
 .eloetelek-item img {
-    width: 100%; /* Kép méretének igazítása */
+    width: 100%; 
     transition: filter 0.3s ease-in-out;
 }
 
@@ -179,7 +157,8 @@ text-align: center;
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.eloetelek-item:hover .leiras p {
+.eloetelek-item:hover .leiras p,
+.eloetelek-item.active .leiras p {
     visibility: visible;
     opacity: 1;
 }

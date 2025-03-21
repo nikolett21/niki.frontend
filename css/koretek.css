@@ -61,7 +61,7 @@ header h1 {
 }
 @media (max-width: 768px) {
     .koretek-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 oszlop tableten */
+        grid-template-columns: repeat(2, 1fr); 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -111,13 +111,13 @@ header h1 {
 
 .koretek-item {
     position: relative;
-    width: 300px; /* Állítsd be a megfelelő méretet */
+    width: 300px; 
     overflow: hidden;
     text-align: center;
 }
 
 .koretek-item img {
-    width: 100%; /* Kép méretének igazítása */
+    width: 100%; 
     transition: filter 0.3s ease-in-out;
 }
 
@@ -139,7 +139,8 @@ header h1 {
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.koretek-item:hover .leiras p {
+.koretek-item:hover .leiras p,
+.koretek-item.active .leiras p {
     visibility: visible;
     opacity: 1;
 }

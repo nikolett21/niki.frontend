@@ -120,13 +120,13 @@ h3 {
 
 .uditok-item {
     position: relative;
-    width: 300px; /* Állítsd be a megfelelő méretet */
+    width: 300px; 
     overflow: hidden;
     text-align: center;
 }
 
 .uditok-item img {
-    width: 100%; /* Kép méretének igazítása */
+    width: 100%; 
     transition: filter 0.3s ease-in-out;
 }
 
@@ -148,7 +148,8 @@ h3 {
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.uditok-item:hover .leiras p {
+.uditok-item:hover .leiras p,
+.uditok-item.active .leiras p {
     visibility: visible;
     opacity: 1;
 }

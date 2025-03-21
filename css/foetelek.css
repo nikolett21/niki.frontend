@@ -120,13 +120,13 @@ h3 {
 
 .foetelek-item {
     position: relative;
-    width: 300px; /* Állítsd be a megfelelő méretet */
+    width: 300px; 
     overflow: hidden;
     text-align: center;
 }
 
 .foetelek-item img {
-    width: 100%; /* Kép méretének igazítása */
+    width: 100%; 
     transition: filter 0.3s ease-in-out;
 }
 
@@ -148,7 +148,8 @@ h3 {
     transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
-.foetelek-item:hover .leiras p {
+.foetelek-item:hover .leiras p,
+.foetelek-item.active .leiras p {
     visibility: visible;
     opacity: 1;
 }
