@@ -40,3 +40,9 @@ async function register(event) {
         alert('Ismeretlen hiba');
     }
 }
+
+document.querySelectorAll('.desszertek-item').forEach(item => {
+    item.addEventListener('click', function () {
+        this.classList.toggle('active'); 
+    });
+});

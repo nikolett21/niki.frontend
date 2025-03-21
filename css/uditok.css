@@ -62,12 +62,20 @@ header h1 {
 }
 @media (max-width: 768px) {
     .uditok-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 oszlop tableten */
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
 @media (max-width: 480px) {
     .uditok-grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 oszlop mobilon */
+        grid-template-columns: repeat(1, 1fr); 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
 

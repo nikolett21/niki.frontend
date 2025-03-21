@@ -64,3 +64,9 @@ function renderFoodsByCategory(foodsByCategory) {
         eloetelek.append(eloetelekItemDiv);
     });
 }
+
+document.querySelectorAll('.desszertek-item').forEach(item => {
+    item.addEventListener('click', function () {
+        this.classList.toggle('active'); 
+    });
+});

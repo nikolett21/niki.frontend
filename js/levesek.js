@@ -63,3 +63,9 @@ function renderFoodsByCategory(foodsByCategory) {
         levesek.append(levesekItemDiv);
     });
 }
+
+document.querySelectorAll('.desszertek-item').forEach(item => {
+    item.addEventListener('click', function () {
+        this.classList.toggle('active'); 
+    });
+});
