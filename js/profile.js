@@ -65,6 +65,16 @@ async function save() {
         alert('Hálózati hiba vagy szerverhiba történt.');
     }
 }
+// ételek lekérdezése
+async function getPics() {
+    const res = await fetch('/api/getFoods', {
+        methot: 'GET',
+        credentials: 'include'
+    });
+    const foods = await res.json();
+    console.log(foods);
+}
+
 // a profile kép megjelenítése
 async function getpfp() {
     const res = await fetch('/api/getpfp', {
