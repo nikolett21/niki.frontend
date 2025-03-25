@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
 
+window.addEventListener('DOMContentLoaded', getpfp);
+
     if (btnSave) {
         btnSave.addEventListener('click', save);
     } else {
@@ -60,5 +62,20 @@ async function save() {
     } catch (error) {
         console.error('Hiba történt:', error);
         alert('Hálózati hiba vagy szerverhiba történt.');
+    }
+}
+// a profile kép megjelenítése
+async function getpfp() {
+    const res = await fetch('/api/getpfp', {
+        method: 'GET',
+        credentials: 'include'
+    });
+
+    const data = await res.json();
+    console.log(data);
+    
+    if (res.ok) {
+        console.log(`${data[0].pfp}`)
+        iconUser.innerHTML = `<img src='/foods/${data[0].pfp}' alt='${data[0].pfp}'>`; 
     }
 }
