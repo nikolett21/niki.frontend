@@ -1,100 +1,66 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ízhorizon</title>
     <link rel="shortcut icon" href="/foods/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <title>Bejelentkezés - Ízhorizon</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body id="header">
-    <header>
-        <div class="menu-logo">
-            <div class="logo">
-                <img src="/foods/logo.png" alt="logo" style="height: 100px;">
-            </div>
-            <p class="menu-logo-izhorizon">Ízhorizon</p>
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            <img src="/foods/logo.png" alt="Ízhorizon logó" class="auth-logo">
+            <h1>Üdvözöljük újra!</h1>
+            <p class="auth-subtitle">Jelentkezzen be fiókjába</p>
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-        <nav>
-            <a href="./home.html" class="icon-home">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <a href="./profile.html" class="icon-user" id ="usericon">
-                <i class="fa-solid fa-user"></i>
-            </a>
-            <a href="./index.html" class="icon-logout">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            </a>
-            <a href="./galeria.html" class="icon-info">
-                <i class="fa-solid fa-circle-info"></i>
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section class="fejlec">
-            <h1>ASZTALFOGLALÁS</h1>
-            <a class="link" href="naptar.html">Foglalj itt!</a>
-            <p>Fedezze fel a gasztronómia új dimenzióját éttermünkben...</p>
-        </section>
-
-        <section class="introduction">
-            <h2>Nagy szeretettel várjuk a Paulay Ede utcai Ízhorizon éttermében!</h2>
-        </sectioyn>
-
-        <section class="menu" id="categories"> 
-            
-        </section>
-
-        <section class="velemenyek">
-            <h2>Vendégeink írták rólunk...</h2>
-            <div class="velemenyek">
-                <p>„Anna T.”: Az egyik legjobb étterem, ahol valaha jártam! Az ételek frissessége és az udvarias
-                    kiszolgálás volt a kedvencem. Mindenkinek ajánlom!</p><br>
-
-                <p>„Judit R.”: Többször megyünk vissza. Az ételek kiválóak, a hangulat barátságos!</p> <br>
-                <p>*Tünde G.*: „A hely maga gyönyörű, és az ételek ízvilága is lenyűgöző. A személyzet nagyon figyelmes
-                    volt, és az egész élmény igazán emlékezetes. Nagyon ajánlom!”
-                </p><br>
-                <p>*Péter S.*: „Kellemes meglepetés volt az étterem. Az ételek ízvilága friss és innovatív, a
-                    felszolgálás pedig gyors és figyelmes. A desszert különösen emlékezetes volt.</p><br>
-                <p>*László K.*: „Csodálatos élmény volt! A menüválaszték széles, a fogások ízletesek és kreatívan
-                    tálaltak. A személyzet professzionális és segítőkész volt. Az ár-érték arány is kiváló. Biztosan
-                    visszatérek!”</p><br>
-                <p>*Katalin G.*: „Csodálatos hely! Az ételek frissen készülnek, és a ízek harmonikusan illeszkednek
-                    egymáshoz. A kiszolgálás is kitűnő volt, a pincérek figyelmesek és segítőkészek voltak.
-                    Mindenképpen visszatérek!”</p><br>
+        <form class="auth-form">
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="E-mail cím" required>
+                </div>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <address>
-            1061 Budapest, Paulay Ede utca 7.<br>
-            <a href="tel:+36203456876">+36 20 345 6876</a><br>
-        </address>
-        <div class="payment-methods">
-            <img src="/foods/paypal.png" alt="PayPal">
-            <img src="/foods/apay.png" alt="Apple Pay">
-            <img src="/foods/pay.png" alt="Google Pay">
-            <img src="/foods/mastercard.png" alt="MasterCard">
-        </div>
-    </footer>
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="psw" placeholder="Jelszó" required>
+                    <button type="button" class="password-toggle">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
 
-    <script src="js/home.js"></script>
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox"> Emlékezz rám
+                </label>
+                <a href="#" class="forgot-password">Elfelejtette jelszavát?</a>
+            </div>
+
+            <button type="submit" class="auth-button primary" id="btnLogin">
+                Bejelentkezés
+            </button>
+
+            <div class="auth-divider">
+                <span>vagy</span>
+            </div>
+
+            <button type="button" class="auth-button secondary">
+                <i class="fab fa-google"></i> Bejelentkezés Google-lel
+            </button>
+
+            <p class="auth-footer">
+                Még nincs fiókja? <a href="registration.html" id="btnReg">Regisztráció</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="/js/index.js"></script>
 </body>
-
 </html>
