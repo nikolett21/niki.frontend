@@ -6,27 +6,51 @@
     <title>Profil módosítás</title>
     <link rel="stylesheet" href="/css/profile.css">
     <link rel="shortcut icon" href="/fotok/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="profile-container">
-        
-        <img alt="Profilkép" class="icon-user" id ="usericon" width="100">
+        <div class="profile-header">
+            <div class="avatar-container">
+                <img alt="Profilkép" class="profile-avatar" id="usericon">
+                <label for="pfp" class="avatar-edit">
+                    <i class="fas fa-camera"></i>
+                </label>
+                <input type="file" id="pfp" accept="image/*" class="hidden-file-input">
+            </div>
+            <h1>Profil Beállítások</h1>
+        </div>
 
-        <h1>Profil módosítás</h1>
+        <div class="form-group">
+            <label for="name">Felhasználónév</label>
+            <div class="input-with-button">
+                <input type="text" id="name" placeholder="Új felhasználónév">
+                <button class="icon-button"><i class="fas fa-check"></i></button>
+            </div>
+        </div>
 
-        <input type="text" id="name" placeholder="Új felhasználónév">
-        <button>Felhasználónév módosítása</button>
+        <div class="form-group">
+            <label for="psw">Jelszó</label>
+            <div class="input-with-button">
+                <input type="password" id="psw" placeholder="Új jelszó">
+                <button class="icon-button"><i class="fas fa-check"></i></button>
+            </div>
+        </div>
 
-        <input type="password" id="psw" placeholder="Új jelszó">
-        <button>Jelszó módosítása</button>
+        <div class="form-group">
+            <label>Profilkép</label>
+            <button class="full-width-button" id="changeAvatarBtn">
+                <i class="fas fa-image"></i> Profilkép módosítása
+            </button>
+        </div>
 
-        <input type="file" class="pfp" id="pfp">
-        <button>Profilkép módosítása</button>
-
-        <button id="btnSave" class="save">Mentés</button>
+        <div class="action-buttons">
+            <button id="btnSave" class="primary-button">Változtatások mentése</button>
+            <button class="secondary-button">Mégse</button>
+        </div>
     </div>
+
+    <script src="/js/profile.js" defer></script>
 </body>
-<script src="/js/profile.js" defer></script>
 </html>

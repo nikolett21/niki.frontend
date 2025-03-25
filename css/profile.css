@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: 'ADLaM Display', sans-serif;
     background: url('/fotok/hatter.jpeg') no-repeat center center fixed;
@@ -68,4 +68,210 @@ img{
     width: 15%;
     justify-content: center;
     align-items: center;
+}
+*/ 
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #2d3748;
+}
+
+/* Profile Container */
+.profile-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px;
+    margin: 2rem;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin-top: 1rem;
+}
+
+/* Avatar Styles */
+.avatar-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-edit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #4f46e5;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid white;
+}
+
+.avatar-edit:hover {
+    background: #4338ca;
+    transform: scale(1.1);
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.input-with-button {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-with-button input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #f8fafc;
+}
+
+.input-with-button input:focus {
+    outline: none;
+    border-color: #a5b4fc;
+    box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.3);
+    background-color: white;
+}
+
+.icon-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button:hover {
+    background: #4338ca;
+}
+
+.full-width-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: #f1f5f9;
+    color: #4f46e5;
+    border: 1px dashed #c7d2fe;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.full-width-button:hover {
+    background: #e2e8f0;
+    border-color: #a5b4fc;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.primary-button {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+    background: #4338ca;
+}
+
+.secondary-button {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: white;
+    color: #4f46e5;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.secondary-button:hover {
+    background: #f8fafc;
+    border-color: #c7d2fe;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
 }
