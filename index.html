@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/foods/logo.png" type="image/x-icon">
     <title>Bejelentkezés - Ízhorizon</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="login-container">
-        <img src="/foods/logo.png" alt="Ízhorizon logó" class="logo">
-        <h1>Bejelentkezés</h1>
+    <div class="auth-container">
+        <div class="auth-header">
+            <img src="/foods/logo.png" alt="Ízhorizon logó" class="auth-logo">
+            <h1>Üdvözöljük újra!</h1>
+            <p class="auth-subtitle">Jelentkezzen be fiókjába</p>
+        </div>
 
-            <div class="input">
-                <input type="email" id="email" placeholder="e-mail cím">
+        <form class="auth-form">
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="E-mail cím" required>
+                </div>
             </div>
-            <div class="input">
-                <input type="password" id="psw" placeholder="******">
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="psw" placeholder="Jelszó" required>
+                    <button type="button" class="password-toggle">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
             </div>
 
-            <button type="submit" class="login" href="" id="btnLogin">Bejelentkezés</button>
-        <p>Még nincs fiókod? <a class="reg" id="btnReg" href="registration.html">Regisztráció</a></p>
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox"> Emlékezz rám
+                </label>
+                <a href="#" class="forgot-password">Elfelejtette jelszavát?</a>
+            </div>
 
+            <button type="submit" class="auth-button primary" id="btnLogin">
+                Bejelentkezés
+            </button>
+
+            <div class="auth-divider">
+                <span>vagy</span>
+            </div>
+
+            <button type="button" class="auth-button secondary">
+                <i class="fab fa-google"></i> Bejelentkezés Google-lel
+            </button>
+
+            <p class="auth-footer">
+                Még nincs fiókja? <a href="registration.html" id="btnReg">Regisztráció</a>
+            </p>
+        </form>
     </div>
 
     <script src="/js/index.js"></script>
 </body>
-
 </html>
