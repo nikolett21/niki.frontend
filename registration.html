@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regisztráció - Ízhorizon</title>
     <link rel="stylesheet" href="/css/registration.css">
     <link rel="shortcut icon" href="/fotok/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="registration-container">
-        <img src="/foods/logo.png" alt="Ízhorizon logó" class="logo">
-        <h1>Regisztráció</h1>
-        <form id="registration">
-            <input type="text" id="name"  placeholder="Felhasználónév" required>
-            <input type="email" id="email" placeholder="E-mail" required>
-            <input type="password" id="psw" placeholder="Jelszó" required>
-            <input type="password" id="psw2" placeholder="Jelszó megerősítése" required>
-            <button type="submit">Regisztráció</button>
+    <div class="auth-container">
+        <div class="auth-header">
+            <img src="/foods/logo.png" alt="Ízhorizon logó" class="auth-logo">
+            <h1>Új fiók létrehozása</h1>
+            <p class="auth-subtitle">Töltse ki az alábbi mezőket a regisztrációhoz</p>
+        </div>
+
+        <form id="registration" class="auth-form">
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" placeholder="Felhasználónév" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="E-mail cím" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="psw" placeholder="Jelszó" required>
+                    <button type="button" class="password-toggle">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="psw2" placeholder="Jelszó megerősítése" required>
+                    <button type="button" class="password-toggle">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-terms">
+                <label class="terms-checkbox">
+                    <input type="checkbox" required> Elfogadom a <a href="#">Felhasználási feltételeket</a>
+                </label>
+            </div>
+
+            <button type="submit" class="auth-button primary">
+                Regisztráció
+            </button>
+
+            <div class="auth-divider">
+                <span>vagy</span>
+            </div>
+
+            <button type="button" class="auth-button secondary">
+                <i class="fab fa-google"></i> Regisztráció Google-lel
+            </button>
+
+            <p class="auth-footer">
+                Már van fiókja? <a href="index.html">Bejelentkezés</a>
+            </p>
         </form>
-        <p class="form-link">Már van fiókod? <a href="index.html">Bejelentkezés</a></p>
     </div>
 
-    <script src="./js/registration.js"></script> 
+    <script src="./js/registration.js"></script>
 </body>
-
 </html>
