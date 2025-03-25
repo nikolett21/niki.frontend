@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
-    const iconUser = document.getElementsByClassName('icon-user')[0];
-
-window.addEventListener('DOMContentLoaded', getpfp);
+    const iconUser = document.getElementById('usericon'); // Módosítottam, hogy ID alapján keresse
 
     if (btnSave) {
         btnSave.addEventListener('click', save);
     } else {
         console.error("A '#btnSave' azonosítójú gomb nem található.");
     }
+
+    // Itt hívjuk meg a getpfp függvényt, mivel már betöltődött a DOM
+    getpfp();
 });
 
 async function save() {
@@ -65,28 +66,33 @@ async function save() {
         alert('Hálózati hiba vagy szerverhiba történt.');
     }
 }
-// ételek lekérdezése
-async function getPics() {
-    const res = await fetch('/api/getFoods', {
-        methot: 'GET',
-        credentials: 'include'
-    });
-    const foods = await res.json();
-    console.log(foods);
-}
 
 // a profile kép megjelenítése
 async function getpfp() {
-    const res = await fetch('/api/getpfp', {
-        method: 'GET',
-        credentials: 'include'
-    });
+    try {
+        const res = await fetch('/api/getpfp', {
+            method: 'GET',
+            credentials: 'include'
+        });
 
-    const data = await res.json();
-    console.log(data);
-    
-    if (res.ok) {
-        console.log(`${data[0].pfp}`)
-        iconUser.innerHTML = `<img src='/foods/${data[0].pfp}' alt='${data[0].pfp}'>`; 
+        const data = await res.json();
+        console.log(data);
+        
+        if (res.ok) {
+            const iconUser = document.getElementById('usericon');
+            if (iconUser) {
+                // Ellenőrizzük, hogy van-e pfp az adatokban
+                if (data[0]?.pfp) {
+                    iconUser.src = `/foods/${data[0].pfp}`;
+                    iconUser.alt = data[0].pfp;
+                } else {
+                    console.log("Nincs profilkép az adatokban");
+                    // Itt beállíthatunk egy alapértelmezett képet
+                    iconUser.src = "/fotok/logo.png";
+                }
+            }
+        }
+    } catch (error) {
+        console.error('Hiba a profilkép betöltésekor:', error);
     }
 }
