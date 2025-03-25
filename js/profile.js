@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
+    const iconUser = document.getElementsByClassName('icon-user')[0];
 
 window.addEventListener('DOMContentLoaded', getpfp);
 
