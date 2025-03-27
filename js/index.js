@@ -1,4 +1,4 @@
-const btnLogin = document.getElementsByClassName('login elso')[0];
+const btnLogin = document.getElementsByClassName('login')[0];
 const btnReg = document.getElementsByClassName('reg')[0];
 
 btnReg.addEventListener('click', () => {
