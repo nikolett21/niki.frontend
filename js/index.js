@@ -54,38 +54,20 @@ async function login() {
     }
 } */
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Helyes elemek kiválasztása - az HTML-ben nincs 'login', 'reg' vagy 'admin' osztályú elem
-    // Az ID-k alapján válasszuk ki a gombokat
-    const btnLogin = document.getElementById('btnLogin'); // Bejelentkezés gomb
-    const btnReg = document.getElementById('btnReg');     // Regisztráció link
-    // const btnAdmin = document.getElementById('btnAdmin'); // Nincs ilyen az HTML-ben
-
-    // 2. Ellenőrizzük, hogy léteznek-e az elemek
-    if (!btnLogin) console.error('btnLogin nem található');
-    if (!btnReg) console.error('btnReg nem található');
-    
-    // 3. Eseményfigyelők hozzáadása
-    if (btnReg) {
-        btnReg.addEventListener('click', (e) => {
-            e.preventDefault(); // Megakadályozzuk az alapértelmezett link viselkedést
-            window.location.href = './registration.html'; // Relatív útvonal javítva
-        });
-    }
-
-    if (btnLogin) {
-        btnLogin.addEventListener('click', async (e) => {
-            e.preventDefault(); // Megakadályozzuk az űrlap alapértelmezett beküldését
-            await login();      // Meghívjuk a login függvényt
-        });
-    }
-
-    // 4. Jelszó láthatóságának váltása
+    // DOM Elements
+    const authForm = document.getElementById('authForm');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('psw');
+    const rememberMe = document.getElementById('rememberMe');
+    const btnLogin = document.getElementById('btnLogin');
+    const btnReg = document.getElementById('btnReg');
+    const btnGoogle = document.getElementById('btnGoogle');
     const passwordToggle = document.querySelector('.password-toggle');
+
+    // Password toggle functionality
     if (passwordToggle) {
         passwordToggle.addEventListener('click', function() {
-            const passwordInput = document.getElementById('psw');
             const icon = this.querySelector('i');
-            
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
                 icon.classList.replace('fa-eye', 'fa-eye-slash');
@@ -95,50 +77,96 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-});
 
-async function login() {
-    try {
-        const email = document.getElementById('email').value;
-        const psw = document.getElementById('psw').value;
+    // Form submission
+    if (authForm) {
+        authForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            await handleLogin();
+        });
+    }
 
-        if (!email || !psw) {
+    // Registration link
+    if (btnReg) {
+        btnReg.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = './registration.html';
+        });
+    }
+
+    // Google login button
+    if (btnGoogle) {
+        btnGoogle.addEventListener('click', function() {
+            // Implement Google login functionality here
+            console.log('Google login clicked');
+        });
+    }
+
+    // Login handler
+    async function handleLogin() {
+        const email = emailInput.value.trim();
+        const password = passwordInput.value;
+        const remember = rememberMe.checked;
+
+        // Basic validation
+        if (!email || !password) {
             alert('Kérjük töltse ki mindkét mezőt!');
             return;
         }
 
-        const res = await fetch('/api/index', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, psw })
-        });
+        try {
+            // Show loading state
+            btnLogin.classList.add('loading');
+            btnLogin.disabled = true;
 
-        const data = await res.json();
+            // API call
+            const response = await fetch('/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password, remember })
+            });
 
-        if (res.ok) {
-            if (data.szerepkor === 0) {
-                window.location.href = '../home.html'; // Útvonal javítva
-            } else if (data.szerepkor === 1) {
-                window.location.href = '../adminful.html'; // Útvonal javítva
+            const data = await response.json();
+
+            if (response.ok) {
+                // Successful login
+                if (data.szerepkor === 0) {
+                    window.location.href = './home.html';
+                } else if (data.szerepkor === 1) {
+                    window.location.href = './admin.html';
+                }
+            } else {
+                // Handle errors
+                if (data.errors) {
+                    const errorMessages = data.errors.map(err => err.error).join('\n');
+                    alert(errorMessages);
+                } else if (data.error) {
+                    alert(data.error);
+                } else {
+                    alert('Ismeretlen hiba történt');
+                }
             }
-        } else {
-            handleErrors(data);
+        } catch (error) {
+            console.error('Login error:', error);
+            alert('Hálózati hiba történt. Kérjük próbálja újra később.');
+        } finally {
+            // Remove loading state
+            btnLogin.classList.remove('loading');
+            btnLogin.disabled = false;
         }
-    } catch (error) {
-        console.error('Hiba történt:', error);
-        alert('Hálózati hiba történt. Kérjük próbálja újra később.');
     }
-}
 
-function handleErrors(data) {
-    if (data.errors) {
-        const errorMessage = data.errors.map(err => err.error).join('\n');
-        alert(errorMessage);
-    } else if (data.error) {
-        alert(data.error);
-    } else {
-        alert('Ismeretlen hiba történt');
+    // Check for saved credentials
+    function checkRememberMe() {
+        const savedEmail = localStorage.getItem('rememberedEmail');
+        if (savedEmail) {
+            emailInput.value = savedEmail;
+            rememberMe.checked = true;
+        }
     }
-}
+
+    // Initialize
+    checkRememberMe();
+});
