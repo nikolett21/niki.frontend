@@ -135,15 +135,16 @@ body {
     gap: 0.5rem;
 }
 
-.login_elso {
+.login.elso {
     background: #4f46e5;
     color: white;
     border: none;
 }
 
-.login_elso:hover {
+.login.elso:hover {
     background: #4338ca;
 }
+
 .login.masodlagos {
     background: white;
     color: #4a5568;
