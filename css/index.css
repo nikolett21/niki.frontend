@@ -135,23 +135,23 @@ body {
     gap: 0.5rem;
 }
 
-.login.elso {
+.login_elso {
     background: #4f46e5;
     color: white;
     border: none;
 }
 
-.login.elso:hover {
+.login_elso:hover {
     background: #4338ca;
 }
 
-.login.masodlagos {
+.login_masodlagos {
     background: white;
     color: #4a5568;
     border: 1px solid #e2e8f0;
 }
 
-.login.masodlagos:hover {
+.login_masodlagos:hover {
     background: #f8fafc;
     border-color: #c7d2fe;
 }
