@@ -1,7 +1,7 @@
 const btnLogin = document.getElementsByClassName('login')[0];
 const btnReg = document.getElementsByClassName('reg')[0];
 const btnAdmin = document.getElementsByClassName('admin')[0];
-
+ 
 btnReg.addEventListener('click', () => {
     window.location.href = '../registration.html';
 });
