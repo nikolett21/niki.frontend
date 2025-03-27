@@ -119,9 +119,9 @@ async function login() {
 
         if (res.ok) {
             if (data.szerepkor === 0) {
-                window.location.href = './home.html'; // Útvonal javítva
+                window.location.href = '../home.html'; // Útvonal javítva
             } else if (data.szerepkor === 1) {
-                window.location.href = './adminful.html'; // Útvonal javítva
+                window.location.href = '../adminful.html'; // Útvonal javítva
             }
         } else {
             handleErrors(data);
