@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.ok) {
                 // Successful login
                 if (data.szerepkor === 0) {
-                    window.location.href = './home.html';
+                    window.location.href = '../home.html';
                 } else if (data.szerepkor === 1) {
-                    window.location.href = './admin.html';
+                    window.location.href = '../admin.html';
                 }
             } else {
                 // Handle errors
