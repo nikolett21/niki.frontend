@@ -1,16 +1,11 @@
 const btnLogin = document.getElementsByClassName('login')[0];
 const btnReg = document.getElementsByClassName('reg')[0];
-const btnAdmin = document.getElementsByClassName('admin')[0];
 
 btnReg.addEventListener('click', () => {
     window.location.href = '../registration.html';
 });
 
 btnLogin.addEventListener('click', login);
-
-btnAdmin.addEventListener('click', () => {
-    window.location.href = '../Admin.html';
-});
 
 async function login() {
     const email = document.getElementById('email').value;
