@@ -104,7 +104,7 @@ body {
     font-size: 0.9rem;
 }
 
-.remember-me {
+.emlekezz {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -135,48 +135,23 @@ body {
     gap: 0.5rem;
 }
 
-.login {
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.login.primary {
+.login.elso {
     background: #4f46e5;
     color: white;
     border: none;
 }
 
-.login.primary:hover {
+.login.elso:hover {
     background: #4338ca;
 }
 
-.login.secondary {
+.login.masodlagos {
     background: white;
     color: #4a5568;
     border: 1px solid #e2e8f0;
 }
 
-.login.secondary:hover {
-    background: #f8fafc;
-    border-color: #c7d2fe;
-}
-
-.login.secondary {
-    background: white;
-    color: #4a5568;
-    border: 1px solid #e2e8f0;
-}
-
-.login.secondary:hover {
+.login.masodlagos:hover {
     background: #f8fafc;
     border-color: #c7d2fe;
 }
