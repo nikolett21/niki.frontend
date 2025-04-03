@@ -8,7 +8,6 @@ btnReg.addEventListener('click', () => {
     window.location.href = '../registration.html';
 });
 
-btnLogin.addEventListener('click', login);
 async function login() {
     const email = document.getElementById('email').value;
     const psw = document.getElementById('psw').value;
