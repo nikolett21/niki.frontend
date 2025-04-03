@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
+    const pfpInput = document.getElementById('pfp');
+    const iconUser = document.getElementById('usericon');
 
     if (btnSave) {
         btnSave.addEventListener('click', save);
@@ -20,7 +22,22 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Hiba: A 'megse' ID-jű gomb nem található.");
     }
 
-    
+    // 🔹 ÚJ FUNKCIÓ: Profilkép előnézet megjelenítése azonnal a fájl kiválasztása után
+    if (pfpInput) {
+        pfpInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    iconUser.src = e.target.result; // Beállítja az új képet az <img> elemre
+                };
+
+                reader.readAsDataURL(file); // Fájl olvasása és előnézet generálása
+            }
+        });
+    }
 });
 
 async function save() {
@@ -33,15 +50,16 @@ async function save() {
         return;
     }
 
-    const name = nameInput.value;
+    const name = nameInput.value.trim();
     const psw = pswInput.value;
     const pfp = pfpInput.files[0];
 
+    // 🔹 HIBAÜZENET HOZZÁADÁSA: Ha a felhasználónév üres, figyelmeztetés jelenjen meg
     if (name === "") {
         alert("Hiba: A felhasználónév nem lehet üres!");
         return;
     }
-    
+
     const formData = new FormData();
     formData.append('name', name);
     formData.append('psw', psw);
@@ -83,7 +101,7 @@ async function save() {
     }
 }
 
-// a profile kép megjelenítése
+// 🔹 A PROFILKÉP MEGJELENÍTÉSE AZ OLDALON
 async function getpfp() {
     try {
         const res = await fetch('/api/getpfp', {
