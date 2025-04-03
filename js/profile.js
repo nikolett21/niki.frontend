@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Itt hívjuk meg a getpfp függvényt, mivel már betöltődött a DOM
     getpfp();
+
+    const btnCancel = document.getElementById('megse');
+
+    if (btnCancel) {
+        btnCancel.addEventListener('click', () => {
+            window.location.href = '../home.html';
+        });
+    } else {
+        console.error("Hiba: A 'megse' ID-jű gomb nem található.");
+    }
+
 });
 
 async function save() {
