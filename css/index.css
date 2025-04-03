@@ -135,13 +135,13 @@ body {
     gap: 0.5rem;
 }
 
-#login {
+#btnLogin {
     background: #4f46e5;
     color: white;
     border: none;
 }
 
-#login:hover {
+#btnLogin:hover {
     background: #4338ca;
 }
 
