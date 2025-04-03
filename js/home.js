@@ -1,13 +1,13 @@
-// Az ikonUser elem referenciáját szerezzük meg
 const iconUser = document.getElementsByClassName('icon-user')[0];
 const iconLogout = document.getElementsByClassName('icon-logout')[0];
+
 
 iconLogout.addEventListener('click', logout);
 
 window.addEventListener('DOMContentLoaded', getpfp);
 window.addEventListener('DOMContentLoaded', getCategories);
 
-// Kijelentkezés funkció
+// logout
 async function logout() {
     const res = await fetch('/api/logout', {
         method: 'POST',
@@ -24,45 +24,33 @@ async function logout() {
     }
 }
 
-// Ételek lekérdezése
+// ételek lekérdezése
 async function getPics() {
     const res = await fetch('/api/getFoods', {
-        methot: 'GET', // HIBA: methot -> helyesen: method
+        methot: 'GET',
+        credentials: 'include'
+    });
+    const foods = await res.json();
+    console.log(foods);
+    //renderfoods(foods);
+}
+
+// a profile kép megjelenítése
+async function getpfp() {
+    const res = await fetch('/api/getpfp', {
+        method: 'GET',
         credentials: 'include'
     });
 
-    const foods = await res.json();
-    console.log(foods);
-}
-
-// Profilkép és felhasználónév megjelenítése
-async function getpfp() {
-    try {
-        const res = await fetch('/api/getpfp', {
-            method: 'GET',
-            credentials: 'include'
-        });
-
-        const data = await res.json();
-        console.log(data);
-        
-        if (res.ok && data.length > 0) {
-            const { pfp, name } = data[0]; // Kivesszük a szükséges adatokat
-
-            // Profilkép beállítása
-            iconUser.innerHTML = `
-                <img src='/foods/${pfp}' alt='${pfp}' style='display: block; margin: 0 auto; border-radius: 50%; width: 50px; height: 50px;'>
-                <p style='text-align: center; font-size: 14px; color: white; margin-top: 5px;'>${name}</p>
-            `;
-        } else {
-            console.error("Nem sikerült betölteni a profilt.");
-        }
-    } catch (error) {
-        console.error("Hiba történt a profilkép betöltésekor:", error);
+    const data = await res.json();
+    console.log(data);
+    
+    if (res.ok) {
+        console.log(`${data[0].pfp}`)
+        iconUser.innerHTML = `<img src='/foods/${data[0].pfp}' alt='${data[0].pfp}'>`; 
     }
 }
 
-// Kategóriák lekérdezése
 async function getCategories() {
     const res = await fetch('/api/getCategories', {
         method: 'GET',
@@ -73,7 +61,6 @@ async function getCategories() {
     renderCategories(foodCategories);
 }
 
-// Kategóriák megjelenítése
 function renderCategories(foodCategories) {
     const categories = document.getElementById('categories');
     categories.innerHTML = '';
@@ -105,3 +92,4 @@ function renderCategories(foodCategories) {
         categories.append(menuItemDiv);
     });
 }
+
