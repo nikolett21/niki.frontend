@@ -1,11 +1,11 @@
 import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/+esm';
 
 let currentYear = 2025;
-let currentMonth = 3; // Március (0-indexelve: január = 0)
+let currentMonth = 3;
 const today = new Date();
 const monthNames = ["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"];
-let selectedDay = null; // A kiválasztott nap
-let selectedTime = null; // A kiválasztott időpont
+let selectedDay = null; 
+let selectedTime = null; 
 
 function generateCalendar() {
     const daysContainer = document.getElementById("calendar-days");
