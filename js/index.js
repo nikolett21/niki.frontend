@@ -1,4 +1,7 @@
-const btnLogin = document.getElementById('btnLogin');
+btnLogin.addEventListener('click', (event) => {
+    event.preventDefault(); // Megakadályozza az űrlap elküldését
+    login();
+});
 const btnReg = document.getElementById('btnRegi');
 
 btnReg.addEventListener('click', () => {
