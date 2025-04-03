@@ -1,5 +1,5 @@
-const btnLogin = document.getElementById('btnLogin')[0];
-const btnReg = document.getElementById('btnRegi')[0];
+const btnLogin = document.getElementById('btnLogin');
+const btnReg = document.getElementById('btnRegi');
 
 btnReg.addEventListener('click', () => {
     window.location.href = '../registration.html';
