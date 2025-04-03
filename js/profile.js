@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
+    const megse = document.getElementById('megse');
 
+    if (megse) {
+        megse.addEventListener('click')
+    }    
     if (btnSave) {
         btnSave.addEventListener('click', save);
     } else {
@@ -10,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Itt hívjuk meg a getpfp függvényt, mivel már betöltődött a DOM
     getpfp();
 });
+
+async function megse() {
+    window.location.href = '../home.html' m
+}
 
 async function save() {
     const nameInput = document.getElementById('name');
