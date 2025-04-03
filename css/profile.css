@@ -1,3 +1,4 @@
+/* Frissített CSS */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -7,6 +8,7 @@ body {
     align-items: center;
     min-height: 100vh;
     color: #2d3748;
+    line-height: 1.6;
 }
 
 /* Profile Container */
@@ -20,44 +22,62 @@ body {
     margin: 2rem;
 }
 
-.name,
-.psw {
-    padding-bottom: 10px;
-    margin-bottom: 15px; /* Új sor: alsó margó hozzáadása */
-    position: relative; /* Új sor: a pseudo-element pozicionáláshoz */
-}
-
-/* Opcionális: szép elválasztó vonal hozzáadása */
-.name::after,
-.psw::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #e2e8f0;
-    margin-top: 10px; /* További tér a vonal alatt */
-}
-
+/* Fejléc stílusok */
 .profile-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .profile-header h1 {
     font-size: 1.75rem;
     font-weight: 500;
     color: #2d3748;
-    margin-top: 1rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
-/* Avatar Styles */
+/* Űrlap elemek */
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.name,
+.psw {
+    display: block;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.input-with-button {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.input-with-button input {
+    flex: 1;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #f8fafc;
+}
+
+.input-with-button input:focus {
+    outline: none;
+    border-color: #a5b4fc;
+    box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.3);
+    background-color: white;
+}
+
+/* Profilkép stílusok */
 .avatar-container {
     position: relative;
     width: 120px;
     height: 120px;
-    margin: 0 auto;
+    margin: 0 auto 1.5rem;
 }
 
 .profile-avatar {
@@ -95,46 +115,16 @@ body {
     display: none;
 }
 
-/* Form Elements */
-
-.input-with-button {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.input-with-button input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-    background-color: #f8fafc;
-}
-
-.input-with-button input:focus {
-    outline: none;
-    border-color: #a5b4fc;
-    box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.3);
-    background-color: white;
-}
-
-
-.full-width-button:hover {
-    background: #e2e8f0;
-    border-color: #a5b4fc;
-}
-
-/* Action Buttons */
+/* Gombok */
 .action-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .primary-button {
     flex: 1;
-    padding: 0.75rem;
+    padding: 0.85rem;
     border-radius: 8px;
     background: #4f46e5;
     color: white;
@@ -151,7 +141,7 @@ body {
 
 .secondary-button {
     flex: 1;
-    padding: 0.75rem;
+    padding: 0.85rem;
     border-radius: 8px;
     background: white;
     color: #4f46e5;
@@ -167,14 +157,24 @@ body {
     border-color: #c7d2fe;
 }
 
-/* Responsive Adjustments */
+/* Reszponzív módosítások */
 @media (max-width: 480px) {
     .profile-container {
-        padding: 1.5rem;
+        padding: 1.8rem;
         margin: 1rem;
     }
     
     .action-buttons {
         flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+    
+    .profile-header h1 {
+        font-size: 1.5rem;
     }
 }
