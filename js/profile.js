@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 async function megse() {
-    window.location.href = '../home.html' m
+    window.location.href = '../home.html' 
 }
 
 async function save() {
