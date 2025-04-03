@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btnSave = document.getElementById('btnSave');
-
+    const iconUser = document.getElementById('usericon'); // Módosítottam, hogy ID alapján keresse
 
     if (btnSave) {
         btnSave.addEventListener('click', save);
