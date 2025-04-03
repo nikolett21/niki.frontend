@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Itt hívjuk meg a getpfp függvényt, mivel már betöltődött a DOM
     getpfp();
-    
+
     const btnCancel = document.getElementById('megse');
 
     if (btnCancel) {
@@ -37,6 +37,11 @@ async function save() {
     const psw = pswInput.value;
     const pfp = pfpInput.files[0];
 
+    if (name === "") {
+        alert("Hiba: A felhasználónév nem lehet üres!");
+        return;
+    }
+    
     const formData = new FormData();
     formData.append('name', name);
     formData.append('psw', psw);
