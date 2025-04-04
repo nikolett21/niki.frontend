@@ -116,8 +116,8 @@ nav a {
     background-size: cover;
     background-position: center;
     color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #4b79a2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #003e74;
     padding: 50px 20px;
 }
 
