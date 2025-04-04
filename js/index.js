@@ -40,4 +40,18 @@ async function login() {
     } else {
         alert('Ismeretlen hiba');
     }
+
+    const passwordToggle = document.querySelector('.password-toggle');
+passwordToggle.addEventListener('click', () => {
+    const passwordInput = document.getElementById('psw');
+    const icon = passwordToggle.querySelector('i');
+    
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.classList.replace('fa-eye', 'fa-eye-slash');
+    } else {
+        passwordInput.type = 'password';
+        icon.classList.replace('fa-eye-slash', 'fa-eye');
+    }
+});
 }
