@@ -1,5 +1,5 @@
 body {
-    font-family: 'ADLaM Display', sans-serif;
+    font-family: 'Brush Script MT';
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -37,7 +37,7 @@ header {
     color: black;
     padding: 10px 20px;
     z-index: 1000;
-    font-family: 'ADLaM Display', sans-serif;
+    font-family: 'Brush Script MT';
 }
 
 header h1 {
@@ -74,7 +74,7 @@ header h1 {
 .gal-item p {
     margin: 10px 0 0;
     font-size: 20px;
-    font-family: 'ADLaM Display', sans-serif;
+    font-family: 'Brush Script MT';
     text-align: center;
 }
 
@@ -85,7 +85,7 @@ header h1 {
 .nyitva {
     margin: 10px 0 0;
     font-size: 20px;
-    font-family: 'ADLaM Display', sans-serif;
+    font-family: 'Brush Script MT';
     text-align: center;
     color: #3235e9;
 }

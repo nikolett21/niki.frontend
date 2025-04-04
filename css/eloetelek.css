@@ -1,5 +1,5 @@
 body {
-    font-family: 'ADLaM Display', sans-serif;
+    font-family: 'Brush Script MT';
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -39,7 +39,7 @@ header {
     color: black;
     padding: 10px 20px;
     z-index: 1000;
-    font-family: 'ADLaM Display', sans-serif;
+    font-family: 'Brush Script MT';
 }
 header h1 {
     font-size: 24px;

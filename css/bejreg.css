@@ -21,7 +21,7 @@
 }
 
 body{
-    font-family: "ADLaM Display", serif;
+    font-family: 'Brush Script MT';
     font-weight: 400;
     font-style: normal;
     font-size: small;
@@ -32,7 +32,7 @@ body{
 
 }
 .h2{
-    font-family: "ADLaM Display", serif;
+    font-family: 'Brush Script MT';
     font-weight: 400;
     font-style: normal;
    
@@ -52,7 +52,7 @@ body{
 }
 .adlam-display-regular{
     color: black;
-    font-family: "ADLaM Display", serif;
+    font-family: 'Brush Script MT';
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
@@ -78,7 +78,7 @@ body{
     border: none;
     background-color: inherit;
     cursor: inherit;
-    font-family: "ADLaM Display", serif;
+            font-family: 'Brush Script MT';
     font-weight: 400;
     font-style: normal;
     
@@ -89,7 +89,7 @@ body{
     border: none;
     background-color: inherit;
     cursor: inherit;
-    font-family: "ADLaM Display", serif;
+            font-family: 'Brush Script MT';
     font-weight: 400;
     font-style: normal;
 }
