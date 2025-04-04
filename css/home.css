@@ -31,7 +31,7 @@ header {
     padding: 10px 10px;
     position: sticky;
     top: 0;
-    height: 100px;
+    height: 90px;
     z-index: 1000;
 }
 
@@ -118,7 +118,7 @@ nav a {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #003e74;
-    padding: 50px 20px;
+    padding: 50px 30px;
 }
 
 .fejlec h1 {
@@ -140,7 +140,11 @@ nav a {
     font-size: 2rem;
     margin-bottom: 10px;
 }
-
+.introduction p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
