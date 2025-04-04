@@ -41,17 +41,28 @@ async function login() {
         alert('Ismeretlen hiba');
     }
 
+   // Várunk, amíg a teljes oldal betöltődik
+document.addEventListener('DOMContentLoaded', function() {
+    // Jelszó láthatóság váltó gomb és mező kiválasztása
     const passwordToggle = document.querySelector('.password-toggle');
-passwordToggle.addEventListener('click', () => {
     const passwordInput = document.getElementById('psw');
-    const icon = passwordToggle.querySelector('i');
     
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        icon.classList.replace('fa-eye', 'fa-eye-slash');
-    } else {
-        passwordInput.type = 'password';
-        icon.classList.replace('fa-eye-slash', 'fa-eye');
+    // Ha megtaláltuk az elemeket
+    if (passwordToggle && passwordInput) {
+        // Kattintás esemény figyelése
+        passwordToggle.addEventListener('click', function() {
+            // Az ikon kiválasztása a gombon belül
+            const icon = this.querySelector('i');
+            
+            // Jelszó láthatóság váltása
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        });
     }
-});
+
 }
