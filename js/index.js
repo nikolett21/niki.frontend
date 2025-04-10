@@ -38,7 +38,7 @@ async function login() {
             alert(data.message);
             window.location.href = '../home.html';
         } else if (res.ok && data.szerepkor === 1) {
-            window.location.href = '../adminful.html';
+            window.location.href = '../Admin.html';
         } else if (data.errors) {
             let errorMessage = data.errors.map(error => error.error).join('\n');
             alert(errorMessage);
