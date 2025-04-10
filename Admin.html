@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éttermi Admin Felület</title>
-    <style>
-       
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Ízhorizon Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="/fotok/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <h3><i class="fas fa-utensils"></i> Étterem Admin</h3>
+                <h3><i class="fas fa-utensils"></i> Ízhorizon</h3>
             </div>
             <nav class="sidebar-menu">
                 <ul>
                     <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Irányítópult</a></li>
                     <li><a href="#food-upload"><i class="fas fa-hamburger"></i> Étel feltöltés</a></li>
-                    <li><a href="#user-management"><i class="fas fa-users"></i> Felhasználók kezelése</a></li>
+                    <li><a href="#user-management"><i class="fas fa-users"></i> Felhasználók</a></li>
                     <li><a href="#orders"><i class="fas fa-clipboard-list"></i> Rendelések</a></li>
                     <li><a href="#settings"><i class="fas fa-cog"></i> Beállítások</a></li>
                     <li><a href="#"><i class="fas fa-sign-out-alt"></i> Kijelentkezés</a></li>
@@ -34,45 +34,54 @@
                 <h1>Admin Irányítópult</h1>
                 <div class="user-info">
                     <img src="https://via.placeholder.com/40" alt="Profil kép">
-                    <span>Admin Felhasználó</span>
+                    <span>Admin</span>
                 </div>
             </header>
 
             <!-- Étel feltöltés rész -->
             <section id="food-upload" class="card">
                 <div class="card-header">
-                    <h3><i class="fas fa-hamburger"></i> Új étel hozzáadása</h3>
+                    <h3><i class="fas fa-plus-circle"></i> Új étel hozzáadása</h3>
                 </div>
                 <div class="card-body">
+                    <div class="image-upload">
+                        <div class="image-preview">
+                            <i class="fas fa-image" style="font-size: 3rem; color: #999;"></i>
+                        </div>
+                        <label for="fileUpload" class="upload-label">
+                            <i class="fas fa-paperclip"></i> Kép kiválasztása
+                        </label>
+                        <input type="file" id="fileUpload" accept="image/*">
+                    </div>
+
                     <form>
                         <div class="form-group">
-                            <label for="food-name">Étel neve</label>
-                            <input type="text" id="food-name" class="form-control" placeholder="Pl.: Margherita pizza">
+                            <label for="name">Étel neve</label>
+                            <input type="text" id="name" class="form-control" placeholder="Pl.: Margherita pizza">
                         </div>
                         <div class="form-group">
-                            <label for="food-description">Leírás</label>
-                            <textarea id="food-description" class="form-control" placeholder="Étel részletes leírása"></textarea>
+                            <label for="leiras">Leírás</label>
+                            <textarea id="leiras" class="form-control" placeholder="Étel részletes leírása"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="food-price">Ár (Ft)</label>
-                            <input type="number" id="food-price" class="form-control" placeholder="1990">
+                            <label for="price">Ár (Ft)</label>
+                            <input type="number" id="price" class="form-control" placeholder="1990">
                         </div>
                         <div class="form-group">
-                            <label for="food-category">Kategória</label>
-                            <select id="food-category" class="form-control">
+                            <label for="kategoria_id">Kategória</label>
+                            <select id="kategoria_id" class="form-control">
                                 <option value="">Válassz kategóriát...</option>
-                                <option value="pizza">Pizza</option>
-                                <option value="pasta">Tészta</option>
-                                <option value="salad">Saláta</option>
-                                <option value="dessert">Desszert</option>
-                                <option value="drink">Ital</option>
+                                <option value="Eloetelek">Előételek</option>
+                                <option value="levesek">Levesek</option>
+                                <option value="foetelek">Főételek</option>
+                                <option value="desszertek">Desszertek</option>
+                                <option value="uditok">Üditők</option>
+                                <option value="kavek">Kávék</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="food-image">Kép feltöltése</label>
-                            <input type="file" id="food-image" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Mentés</button>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-save"></i> Mentés
+                        </button>
                     </form>
                 </div>
             </section>
@@ -80,64 +89,65 @@
             <!-- Felhasználók kezelése rész -->
             <section id="user-management" class="card">
                 <div class="card-header">
-                    <h3><i class="fas fa-users"></i> Felhasználók kezelése</h3>
+                    <h3><i class="fas fa-users-cog"></i> Felhasználók kezelése</h3>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Felhasználónév</th>
+                                    <th>ID</th>
+                                    <th>Profilkép</th>
+                                    <th>Név</th>
                                     <th>Email</th>
-                                    <th>Jelszó (titkosított)</th>
-                                    <th>Regisztráció dátuma</th>
-                                    <th>Státusz</th>
+                                    <th>Szerepkör</th>
                                     <th>Műveletek</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>admin</td>
-                                    <td>admin@etterem.hu</td>
-                                    <td>*********</td>
-                                    <td>2023-01-15</td>
-                                    <td><span class="badge badge-success">Aktív</span></td>
+                                    <td>1</td>
+                                    <td><img src="https://via.placeholder.com/40" alt="Profilkép"></td>
+                                    <td>Admin</td>
+                                    <td>admin@izhorizon.hu</td>
+                                    <td><span class="badge badge-success">Admin</span></td>
                                     <td>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px;"><i class="fas fa-edit"></i></button>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px; background-color: #dc3545;"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-primary" style="padding: 6px 12px;">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-primary" style="padding: 6px 12px; background-color: var(--accent-color);">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>kisspeter</td>
+                                    <td>2</td>
+                                    <td><img src="https://via.placeholder.com/40" alt="Profilkép"></td>
+                                    <td>Kiss Péter</td>
                                     <td>kiss.peter@example.com</td>
-                                    <td>*********</td>
-                                    <td>2023-03-22</td>
-                                    <td><span class="badge badge-success">Aktív</span></td>
+                                    <td><span class="badge">Felhasználó</span></td>
                                     <td>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px;"><i class="fas fa-edit"></i></button>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px; background-color: #dc3545;"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-primary" style="padding: 6px 12px;">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-primary" style="padding: 6px 12px; background-color: var(--accent-color);">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>nagyanna</td>
+                                    <td>3</td>
+                                    <td><img src="https://via.placeholder.com/40" alt="Profilkép"></td>
+                                    <td>Nagy Anna</td>
                                     <td>nagy.anna@example.com</td>
-                                    <td>*********</td>
-                                    <td>2023-05-10</td>
-                                    <td><span class="badge badge-danger">Inaktív</span></td>
+                                    <td><span class="badge">Felhasználó</span></td>
                                     <td>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px;"><i class="fas fa-edit"></i></button>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px; background-color: #dc3545;"><i class="fas fa-trash"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>kovacsbela</td>
-                                    <td>kovacs.bela@example.com</td>
-                                    <td>*********</td>
-                                    <td>2023-06-18</td>
-                                    <td><span class="badge badge-success">Aktív</span></td>
-                                    <td>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px;"><i class="fas fa-edit"></i></button>
-                                        <button class="btn btn-primary" style="padding: 5px 10px; font-size: 14px; background-color: #dc3545;"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-primary" style="padding: 6px 12px;">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-primary" style="padding: 6px 12px; background-color: var(--accent-color);">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -147,5 +157,29 @@
             </section>
         </main>
     </div>
+
+    <script>
+        // Kép előnézet megjelenítése
+        document.getElementById('fileUpload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const preview = document.querySelector('.image-preview');
+                    preview.innerHTML = `<img src="${event.target.result}" alt="Kép előnézet">`;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Form validáció (csak példa)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Étel sikeresen hozzáadva!');
+            this.reset();
+            document.querySelector('.image-preview').innerHTML = 
+                '<i class="fas fa-image" style="font-size: 3rem; color: #999;"></i>';
+        });
+    </script>
 </body>
 </html>
