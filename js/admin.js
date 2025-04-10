@@ -50,4 +50,3 @@ async function login() {
     } else {
         alert('Ismeretlen hiba');
     }
-}
