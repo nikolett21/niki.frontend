@@ -9,3 +9,21 @@ Abban biztosak voltunk hogy weboldalt szeretnénk és abban is hogy valami olyan
 ---
 
 👉 [Figma terv megtekintése](https://www.figma.com/design/ipdP2BYytD8pvShEUWwQOF/Projekt?node-id=0-1&p=f&t=Wqw4hQMBFSGBfEpm-0)
+
+## Tartalomjegyzék
+
+---
+
+- ⚙️ Index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
+
+- ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja.
+
+- ⚙️  időpont-foglalás 👉
+- ⚙️  profile 👉
+- ⚙️  galéria👉
+- ⚙️  előételek👉
+- ⚙️  levesek👉
+- ⚙️  főételek, köretek és savanyúságok👉
+- ⚙️  desszertek👉
+- ⚙️  üdítők👉
+- ⚙️  kávék👉
