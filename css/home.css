@@ -134,6 +134,8 @@ nav a {
     text-align: center;
     padding: 30px 20px;
     background-color: #f4f4f4;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .introduction h2 {
