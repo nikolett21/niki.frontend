@@ -16,7 +16,7 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 
 - ⚙️ Index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
 
-![index.html](https://postimg.cc/NKPS6B4Z)
+![Fő oldal](https://i.postimg.cc/MGWw8GjZ/k-p-2025-04-15-112846544.png)
 
 
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. Innen érhető el minden aloldal. 
