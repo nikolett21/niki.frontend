@@ -42,5 +42,6 @@ A foglalás sikerességéről visszajelzést kapunk a képernyőn.
 ![Galéria](https://i.postimg.cc/QCdwYPgS/k-p-2025-04-15-153104879.png)
 - ⚙️  előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék 👉
 - ![Ételek és Italok](https://i.postimg.cc/QMRcyWpz/k-p-2025-04-15-154547918.png) 
+(https://i.postimg.cc/mk4CbfpN/k-p-2025-04-15-154719769.png)
 Az oldalak közötti váltakozás mintha egy étlapot lapoznánk. Nyilakkal tettük ezt lehetővé.
 - ⚙️  üdítők 👉
