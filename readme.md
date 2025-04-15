@@ -21,7 +21,10 @@ Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisz
 
 ![Regisztráció](https://i.postimg.cc/yNps7HHM/k-p-2025-04-15-113750861.png)
 
-- ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. Innen érhető el minden aloldal. 
+
+- ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. 
+# H1: Főbb elemek: 
+⚙️ Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
 
 ![Fő oldal](https://i.postimg.cc/MGWw8GjZ/k-p-2025-04-15-112846544.png)
 
