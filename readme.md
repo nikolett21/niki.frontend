@@ -23,9 +23,12 @@ Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisz
 
 
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. 
-# H1: Főbb elemek: 
+# Főbb elemek: 
 ⚙️ Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
-
+⚙️ Foglalás: Lehetősége van a látogatónak előre foglalni asztalt, mindig csak az adott hónapban. A gombra rákattintba az adott dátumok között tud választani, és napokra leosztva időpontot tud foglalni.
+⚙️ Étlap: Az étlap több különböző rétegre van bontva. Minden fogyasztható terméket külön-külön tud megnézni a látogató.
+⚙️ Vélemények: A legfrisebb felhasználói vélemények.
+⚙️ Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
 ![Fő oldal](https://i.postimg.cc/MGWw8GjZ/k-p-2025-04-15-112846544.png)
 
 - ⚙️  időpont-foglalás 👉 
