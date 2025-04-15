@@ -34,13 +34,12 @@ Jelszó változtatás
 - ⚙️ Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
 ![Fő oldal](https://i.postimg.cc/CK9krd15/k-p-2025-04-15-121858309.png)
 ![Fő oldal](https://i.postimg.cc/x1Cm0LNq/k-p-2025-04-15-121931202.png)
-
-
 - ⚙️  időpont foglalás 👉 
 ![Időpont foglalás](https://i.postimg.cc/bwsGX84t/k-p-2025-04-15-122141784.png)
 A foglalás sikerességéről visszajelzést kapunk a képernyőn.
 ![Sikeresség](https://i.postimg.cc/02HQ0Fr2/k-p-2025-04-15-122323089.png)
-- ⚙️  profile 👉 Ezen az oldalon mindent lehet módosítani. Profilképet, felhasználói nevet és jelszót is aztán egy mentés gombbal tudjuk ezeket véglegesíteni.
-- ⚙️  galéria 👉 Minden szükséges információ elérhető itt az étteremről. 
+- ⚙️  galéria 👉 Minden szükséges információ elérhető itt az étteremről.
+![Galéria](https://i.postimg.cc/QCdwYPgS/k-p-2025-04-15-153104879.png)
 - ⚙️  előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék 👉 
 - ⚙️  üdítők 👉
+aa
