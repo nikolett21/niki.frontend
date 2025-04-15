@@ -18,7 +18,8 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 
 ![Bejelentkezés](https://i.postimg.cc/FsrcByT7/k-p-2025-04-15-113131522.png)
 Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
-- ![Regisztráció] (https://i.postimg.cc/yNps7HHM/k-p-2025-04-15-113750861.png)
+
+![Regisztráció](https://i.postimg.cc/yNps7HHM/k-p-2025-04-15-113750861.png)
 
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. Innen érhető el minden aloldal. 
 
