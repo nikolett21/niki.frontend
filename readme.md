@@ -14,15 +14,17 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 
 ---
 
-- ⚙️ Index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
-
+- ⚙️ index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
 ![Bejelentkezés](https://i.postimg.cc/FsrcByT7/k-p-2025-04-15-113131522.png)
 Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
-
+Keresztnév, vezetéknév, email és jelszó mezők.
+- ⚙️ registration.html 👉
 ![Regisztráció](https://i.postimg.cc/yNps7HHM/k-p-2025-04-15-113750861.png)
-Keresztnév, vezetéknév, email és jelszó mezők
-Űrlap validáció
-
+- ⚙️ profile.html 👉
+![Profil szerkesztés](https://i.postimg.cc/BQ2YT9m2/k-p-2025-04-15-121133060.png) 
+Regisztrált felhasználók számára::
+Profiladatok szerkesztése
+Jelszó változtatás
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. 
 # Főbb elemek: 
 ⚙️ Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
