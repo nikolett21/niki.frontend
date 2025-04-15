@@ -16,10 +16,12 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 
 - ⚙️ Index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
 
-![Fő oldal](https://i.postimg.cc/MGWw8GjZ/k-p-2025-04-15-112846544.png)
+![Bejelentkezés](https://i.postimg.cc/FsrcByT7/k-p-2025-04-15-113131522.png)
 
 
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. Innen érhető el minden aloldal. 
+
+![Fő oldal](https://i.postimg.cc/MGWw8GjZ/k-p-2025-04-15-112846544.png)
 
 - ⚙️  időpont-foglalás 👉 
 - ⚙️  profile 👉 Ezen az oldalon mindent lehet módosítani. Profilképet, felhasználói nevet és jelszót is aztán egy mentés gombbal tudjuk ezeket véglegesíteni.
