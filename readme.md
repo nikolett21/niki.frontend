@@ -16,7 +16,7 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 
 - ⚙️ Index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
 
-![index.html](https://pelda.com/kep.png)
+![index.html](https://postimg.cc/NKPS6B4Z)
 
 
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. Innen érhető el minden aloldal. 
