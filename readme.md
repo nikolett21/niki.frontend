@@ -32,7 +32,7 @@ Jelszó változtatás
 - ⚙️ Étlap: Az étlap több különböző rétegre van bontva. Minden fogyasztható terméket külön-külön tud megnézni a látogató.
 - ⚙️ Vélemények: A legfrisebb felhasználói vélemények.
 - ⚙️ Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
-![Fő oldal](https://i.postimg.cc/MGWw8GjZ/k-p-2025-04-15-112846544.png)
+![Fő oldal](https://i.postimg.cc/xTG5kGdR/k-p-2025-04-15-121640982.png)
 
 - ⚙️  időpont-foglalás 👉 
 - ⚙️  profile 👉 Ezen az oldalon mindent lehet módosítani. Profilképet, felhasználói nevet és jelszót is aztán egy mentés gombbal tudjuk ezeket véglegesíteni.
