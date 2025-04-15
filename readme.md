@@ -20,7 +20,8 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
 
 ![Regisztráció](https://i.postimg.cc/yNps7HHM/k-p-2025-04-15-113750861.png)
-
+Keresztnév, vezetéknév, email és jelszó mezők
+Űrlap validáció
 
 - ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. 
 # Főbb elemek: 
