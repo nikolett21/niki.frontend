@@ -109,12 +109,6 @@ fotója felé visszük.
 - │   ├── registration.js
 - │   └── uditok.js
 - └── README.md
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── App.js
-├── package.json
-└── README.md
  ## Jövőbeli fejlesztések:
 - 🌟 Ételek keresése az oldalak átlapozása nélkül
 - 🌟 Online fizetés
