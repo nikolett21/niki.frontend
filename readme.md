@@ -43,5 +43,81 @@ A foglalás sikerességéről visszajelzést kapunk a képernyőn.
 - ⚙️  előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék 👉
 - ![Ételek és Italok](https://i.postimg.cc/QMRcyWpz/k-p-2025-04-15-154547918.png) 
 ![Ételek és Italok](https://i.postimg.cc/mk4CbfpN/k-p-2025-04-15-154719769.png)
-Az oldalak közötti váltakozás mintha egy étlapot lapoznánk. Nyilakkal tettük ezt lehetővé.
-- ⚙️  üdítők 👉
+Az oldalak közötti váltakozás mintha egy étlapot lapoznánk. Nyilakkal tettük ezt lehetővé. 
+Minden kategóriában, minden ételnek külön leírása van. 
+![Ételek és Italok](https://i.postimg.cc/5yP0DZht/k-p-2025-04-15-155129584.png)
+
+
+ Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
+hogyan és miként fogyasztják. Ezt úgy tudjuk látni ha a kurzort az étel
+fotója felé visszük.
+(ide kellene egy kép erről.)
+## 📦 Kódblokk
+**Íme hogyan oldottuk meg: **
+````(úgy emlékszem css-ben van.)
+```
+```
+````
+# Technikai megvalósítások:
+ HTML5
+ CSS a dizájnhoz
+ Font Awesome az ikonokhoz
+# A projekt struktúrája
+├── html/
+│ ├── Admin.html
+│ ├── adminful.html
+│ └── desszertek.html
+│ ├── Előételek.html
+│ ├── Főételek.html
+│ └── galeria.html
+│ ├── home.html
+│ ├── index.html
+│ └── Kávék.html
+│ ├── levesek.html
+│ ├── naptar.html
+│ ├── profile.html
+│ ├── registration.html
+│ └── Üdítők.html
+├── css/
+│ ├── Admin.css
+│ ├── bejreg.css
+│ └── desszertek.css
+│ ├── eloetelek.css
+│ ├── foetelek.css
+│ └── galeria.css
+│ ├── home.css
+│ ├── index.css
+│ └── kavek.css
+│ ├── koretek.css
+│ ├── levesek.css
+│ └── naptar.css
+│ ├── profile.css
+│ ├── registration.css
+│ └── uditok.css
+├── js/
+│ └── admin.js
+│ ├── adminful.js
+│ ├── desszertek.js
+│ └── eloetelek.js
+│ ├── foetelek.js
+│ ├── getfoods.js
+│ └── home_admin.js
+│ ├── home.js
+│ ├── index.js
+│ └── kavek.js
+│ └── levesek.js
+│ ├── naptar.js
+│ ├── profile.js
+│ └── registration.js
+│ └── uditok.js
+└── README.md
+#Jövőbeli fejlesztések:
+🌟 Ételek keresése az oldalak átlapozása nélkül
+🌟 Online fizetés
+🌟 Admin oldal
+# Az oldalon használt hivatkozások
+## 🔗 Linkek (kellene a linkje is vagy elég felsorolni?)
+🔗 Deepseek
+🔗 Chat GPT
+🔗 Git Hub
+🔗Netlify
