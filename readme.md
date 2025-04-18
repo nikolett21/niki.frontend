@@ -37,7 +37,7 @@ Jelszó változtatás
 - ⚙️  időpont foglalás 👉 
 ![Időpont foglalás](https://i.postimg.cc/bwsGX84t/k-p-2025-04-15-122141784.png)
 A foglalás sikerességéről visszajelzést kapunk a képernyőn.
-![Sikeresség](https://i.postimg.cc/02HQ0Fr2/k-p-2025-04-15-122323089.png)
+![Sikeresség](https://i.postimg.cc/Hk3P8BYj/k-p-2025-04-18-210644934.png)
 - ⚙️  galéria 👉 Minden szükséges információ elérhető itt az étteremről.
 ![Galéria](https://i.postimg.cc/QCdwYPgS/k-p-2025-04-15-153104879.png)
 - ⚙️  előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék 👉
