@@ -11,9 +11,14 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 👉 [Figma terv megtekintése](https://www.figma.com/design/ipdP2BYytD8pvShEUWwQOF/Projekt?node-id=0-1&p=f&t=Wqw4hQMBFSGBfEpm-0)
 
 ## Tartalomjegyzék
-
+- [Bevezetés](#Bevezetés)
+- [Telepítés](#telepítés)
+- [Használat](#használat)
+- [Dokumentáció](#dokumentáció)
+- [Közreműködés](#közreműködés)
+- [Licenc](#licenc)
 ---
-
+# Bevezetés
 - ⚙️ index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
 ![Bejelentkezés](https://i.postimg.cc/FsrcByT7/k-p-2025-04-15-113131522.png)
 Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
@@ -115,7 +120,8 @@ fotója felé visszük.
 - 🌟 Admin oldal
 # Az oldalon használt hivatkozások
 ## 🔗 Linkek (kellene a linkje is vagy elég felsorolni?)
-🔗 Deepseek
-🔗 Chat GPT
-🔗 Git Hub
-🔗Netlify
+🔗  Deepseek
+🔗  Chat GPT
+🔗  Git Hub
+🔗  Netlify
+
