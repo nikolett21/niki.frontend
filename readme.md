@@ -61,54 +61,54 @@ fotója felé visszük.
  CSS a dizájnhoz
  Font Awesome az ikonokhoz
 # A projekt struktúrája
-├── html/
-│   ├── Admin.html
-│   ├── adminful.html
-│   ├── desszertek.html
-│   ├── Előételek.html
-│   ├── Főételek.html
-│   ├── galeria.html
-│   ├── home.html
-│   ├── index.html
-│   ├── Kávék.html
-│   ├── levesek.html
-│   ├── naptar.html
-│   ├── profile.html
-│   ├── registration.html
-│   └── Üdítők.html
-├── css/
-│   ├── Admin.css
-│   ├── bejreg.css
-│   ├── desszertek.css
-│   ├── eloetelek.css
-│   ├── foetelek.css
-│   ├── galeria.css
-│   ├── home.css
-│   ├── index.css
-│   ├── kavek.css
-│   ├── koretek.css
-│   ├── levesek.css
-│   ├── naptar.css
-│   ├── profile.css
-│   ├── registration.css
-│   └── uditok.css
-├── js/
-│   ├── admin.js
-│   ├── adminful.js
-│   ├── desszertek.js
-│   ├──eloetelek.js
-│   ├── foetelek.js
-│   ├── getfoods.js
-│   ├── home_admin.js
-│   ├── home.js
-│   ├── index.js
-│   ├── kavek.js
-│   ├── levesek.js
-│   ├── naptar.js
-│   ├── profile.js
-│   ├── registration.js
-│   └── uditok.js
-└── README.md
+- ├── html/
+- │   ├── Admin.html
+- │   ├── adminful.html
+- │   ├── desszertek.html
+- │   ├── Előételek.html
+- │   ├── Főételek.html
+- │   ├── galeria.html
+- │   ├── home.html
+- │   ├── index.html
+- │   ├── Kávék.html
+- │   ├── levesek.html
+- │   ├── naptar.html
+- │   ├── profile.html
+- │   ├── registration.html
+- │   └── Üdítők.html
+- ├── css/
+- │   ├── Admin.css
+- │   ├── bejreg.css
+- │   ├── desszertek.css
+- │   ├── eloetelek.css
+- │   ├── foetelek.css
+- │   ├── galeria.css
+- │   ├── home.css
+- │   ├── index.css
+- │   ├── kavek.css
+- │   ├── koretek.css
+- │   ├── levesek.css
+- │   ├── naptar.css
+- │   ├── profile.css
+- │   ├── registration.css
+- │   └── uditok.css
+- ├── js/
+- │   ├── admin.js
+- │   ├── adminful.js
+- │   ├── desszertek.js
+- │   ├──eloetelek.js
+- │   ├── foetelek.js
+- │   ├── getfoods.js
+- │   ├── home_admin.js
+- │   ├── home.js
+- │   ├── index.js
+- │   ├── kavek.js
+- │   ├── levesek.js
+- │   ├── naptar.js
+- │   ├── profile.js
+- │   ├── registration.js
+- │   └── uditok.js
+- └── README.md
  ## Jövőbeli fejlesztések:
 - 🌟 Ételek keresése az oldalak átlapozása nélkül
 - 🌟 Online fizetés
