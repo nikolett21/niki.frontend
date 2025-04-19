@@ -19,7 +19,7 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 - [A projekt struktúrája](#Aprojektstruktúrája)
 - [Jövőbeli fejlesztések:](#Jövőbelifejlesztések:)
 - [Az oldalon használt hivatkozások](#Azoldalonhasználthivatkozások)
-```
+
 ---
 ## Bevezetés
 - Az index.html a legelső oldal, ami a már meglévő fiókkal történő bejelentkezést teszi lehetővé.  
