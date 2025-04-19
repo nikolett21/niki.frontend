@@ -1,5 +1,7 @@
 # Ízhorizon Éttermünk – Az ízek horizontján!
 **Frontend**
+## Készítette: 
+- Kővári Nikolett
  
 -  Projektünkbe nagy lendülettel vágtunk bele, több ötletünk volt, hogy miről kellene csinálunk ezt a munkát.
 Abban biztosak voltunk hogy weboldalt szeretnénk és abban is hogy valami olyan témát jelenitsünk meg ami mind a kettőnket érdekel vagy van valamilyen személyes élményünk is a dologgal. A Figmás tervezés elég egyszerűen ment, egyértelműen tudtuk mit szeretnénk. Ahogy egyre jobban ástuk bele magunkat egyre több ötlet követte egymást, így született meg a mi tetszésünknek megfelelő terv. 
@@ -11,13 +13,13 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 
 ## Tartalomjegyzék
 - [Bevezetés](#Bevezetés)
-- [Főbb elemek](#főbbelemek)
-- [Használat](#használat)
-- [Dokumentáció](#dokumentáció)
-- [Közreműködés](#közreműködés)
+- [Főbb elemek](#Főbbelemek)
+- [Technikai megvalósítások](#Technikai megvalósítások)
+- [A projekt struktúrája](#A projekt struktúrája)
+- [Jövőbeli fejlesztések:](#Jövőbeli fejlesztések:)
 - [Licenc](#licenc)
 ---
-# Bevezetés
+## Bevezetés
 - Az index.html a legelső oldal, ami a már meglévő fiókkal történő bejelentkezést teszi lehetővé.  
 - A registration.html arra szolgál
 ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
@@ -36,11 +38,11 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
 
-# Technikai megvalósítások:
+## Technikai megvalósítások:
  - HTML5 ✅
  - CSS a dizájnhoz ✅
  - Font Awesome az ikonokhoz ✅
-# A projekt struktúrája
+## A projekt struktúrája
 ```markdown
 ├── html/
 │     ├── Admin.html
@@ -58,49 +60,47 @@ fotója felé visszük.
 │     ├── registration.html
 │     └── Üdítők.html
 ├── css/
- │   ├── Admin.css
- │   ├── bejreg.css
- │   ├── desszertek.css
- │   ├── eloetelek.css
- │   ├── foetelek.css
- │   ├── galeria.css
- │   ├── home.css
- │   ├── index.css
- │   ├── kavek.css
- │   ├── koretek.css
- │   ├── levesek.css
- │   ├── naptar.css
- │   ├── profile.css
- │   ├── registration.css
- │   └── uditok.css
- ├── js/
- │   ├── admin.js
- │   ├── adminful.js
- │   ├── desszertek.js
- │   ├──eloetelek.js
- │   ├── foetelek.js
- │   ├── getfoods.js
- │   ├── home_admin.js
- │   ├── home.js
- │   ├── index.js
- │   ├── kavek.js
- │   ├── levesek.js
- │   ├── naptar.js
- │   ├── profile.js
- │   ├── registration.js
- │   └── uditok.js
- └── README.md
+│   ├── Admin.css
+│   ├── bejreg.css
+│   ├── desszertek.css
+│   ├── eloetelek.css
+│   ├── foetelek.css
+│   ├── galeria.css
+│   ├── home.css
+│   ├── index.css
+│   ├── kavek.css
+│   ├── koretek.css
+│   ├── levesek.css
+│   ├── naptar.css
+│   ├── profile.css
+│   ├── registration.css
+│   └── uditok.css
+├── js/
+│   ├── admin.js
+│   ├── adminful.js
+│   ├── desszertek.js
+│   ├──eloetelek.js
+│   ├── foetelek.js
+│   ├── getfoods.js
+│   ├── home_admin.js
+│   ├── home.js
+│   ├── index.js
+│   ├── kavek.js
+│   ├── levesek.js
+│   ├── naptar.js
+│   ├── profile.js
+│   ├── registration.js
+│   └── uditok.js
+└── README.md
 ```
 
 ---
- ## Jövőbeli fejlesztések:
+ ## Jövőbeli fejlesztési tervek:
 - 🌟 Ételek keresése az oldalak átlapozása nélkül
-- 🌟 Online fizetés
+- 🌟 Online fizetés 
 - 🌟 Admin oldal
-# Az oldalon használt hivatkozások
-## 🔗 Linkek (kellene a linkje is vagy elég felsorolni?)
-🔗  Deepseek
-🔗  Chat GPT
+## Az oldalon használt hivatkozások
 🔗  Git Hub
 🔗  Netlify
+🔗  Chat GPT
 
