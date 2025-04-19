@@ -30,17 +30,18 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 -  Étlap: Az étlap több különböző rétegre van bontva. Minden fogyasztható terméket külön-külön tud megnézni a látogató.
 -  Vélemények: A legfrisebb felhasználói vélemények.
 -  Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
--  Időpont foglalás 👉 Konkrét napot és időpontot tudunk választani az adott hónapban erről a sikerességéről visszajelzést kapunk a képernyőn egy felugró ablakban.
+-  Időpont foglalás oldalon konkrét napot és időpontot tudunk választani az adott hónapban és erről a sikerességéről visszajelzést kapunk a képernyőn felugró ablakban.
 - Galéria (galeria.html)Itt minden szükséges információ elérhető az étteremről.
 - Előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék oldalak közötti váltakozás célja, hogy olyan legyen a felhasználónak mintha egy étlapot lapozna. Nyilakkal tettük ezt lehetővé a fejlécben. Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
 hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
 
 # Technikai megvalósítások:
- - HTML5
- - CSS a dizájnhoz
- - Font Awesome az ikonokhoz
+ - HTML5 ✅
+ - CSS a dizájnhoz ✅
+ - Font Awesome az ikonokhoz ✅
 # A projekt struktúrája
+```markdown
 ├── html/
 │     ├── Admin.html
 │     ├── adminful.html
@@ -72,23 +73,26 @@ fotója felé visszük.
 - │   ├── profile.css
 - │   ├── registration.css
 - │   └── uditok.css
-- ├── js/
-- │   ├── admin.js
-- │   ├── adminful.js
-- │   ├── desszertek.js
-- │   ├──eloetelek.js
-- │   ├── foetelek.js
-- │   ├── getfoods.js
-- │   ├── home_admin.js
-- │   ├── home.js
-- │   ├── index.js
-- │   ├── kavek.js
-- │   ├── levesek.js
-- │   ├── naptar.js
-- │   ├── profile.js
-- │   ├── registration.js
-- │   └── uditok.js
-- └── README.md
+ ├── js/
+ │   ├── admin.js
+ │   ├── adminful.js
+ │   ├── desszertek.js
+ │   ├──eloetelek.js
+ │   ├── foetelek.js
+ │   ├── getfoods.js
+ │   ├── home_admin.js
+ │   ├── home.js
+ │   ├── index.js
+ │   ├── kavek.js
+ │   ├── levesek.js
+ │   ├── naptar.js
+ │   ├── profile.js
+ │   ├── registration.js
+ │   └── uditok.js
+ └── README.md
+```
+
+---
  ## Jövőbeli fejlesztések:
 - 🌟 Ételek keresése az oldalak átlapozása nélkül
 - 🌟 Online fizetés
