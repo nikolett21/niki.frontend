@@ -16,9 +16,9 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 - [Bevezetés](#Bevezetés)
 - [Elemek](#Elemek)
 - [Technika](#Technika)
-- [A projekt struktúrája](#Aprojektstruktúrája)
-- [Jövőbeli fejlesztési tervek](#Jövőbelifejlesztésitervek:)
-- [Az oldalon használt hivatkozások](#Azoldalonhasználthivatkozások)
+- [Struktúra](#Struktúra)
+- [Fejleszthető](#Fejleszthető)
+- [Hivatkozások](#hivatkozások)
 
 ---
 ## Bevezetés
@@ -46,7 +46,7 @@ fotója felé visszük.
  - CSS a dizájnhoz ✅
  - Font Awesome az ikonokhoz ✅
  ---
-## A projekt struktúrája
+## Struktúra
 ```markdown
 ├── html/
 │     ├── Admin.html
@@ -99,12 +99,12 @@ fotója felé visszük.
 ```
 
 ---
- ## Jövőbeli fejlesztési tervek:
+ ## Fejleszthető:
 - 🌟 Ételek keresése az oldalak átlapozása nélkül
 - 🌟 Online fizetés 
 - 🌟 Admin oldal
  ---
-## Az oldalon használt hivatkozások
+## Hivatkozások
 🔗  Git Hub
 🔗  Netlify
 🔗  Chat GPT
