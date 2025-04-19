@@ -43,6 +43,7 @@ hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az ét
 fotója felé visszük.
  ---
 ## Technika:
+#### Amikkel dolgoztunk..
  - HTML5 ✅
  - CSS a dizájnhoz ✅
  - Font Awesome az ikonokhoz ✅
@@ -101,11 +102,13 @@ fotója felé visszük.
 
 ---
  ## Fejleszthető:
-- 🌟 Ételek keresése az oldalak átlapozása nélkül
-- 🌟 Online fizetés 
-- 🌟 Admin oldal
+ #### A jövőben szeretnénk megvalósítani még
+- 🌟 Az ételek keresését az oldalak átlapozása nélkül
+- 🌟 Az online fizetési lehetőséget 
+- 🌟 Az admin oldal teljeskörű használatát
  ---
 ## Hivatkozások
+
 🔗  Git Hub
 🔗  Netlify
 🔗  Chat GPT
