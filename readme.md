@@ -25,30 +25,21 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 - profile.html olyan felhasználók számára fejlesztett oldal akik rendelkeznek már fiókkal. Itt tudják módosítani a jelszavukat, profilképüket és a nevüket is.
 - home.html a legfőbb oldal. Az egész projektnek az alapja. Innen érhető el egy "Részletek" gombra kattintva az ételeink. Látható egy fotó az étteremről illetve a róla adott vélemények is.
 ## Főbb elemek: 
-⚙️ Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
-- ⚙️ Foglalás: Lehetősége van a látogatónak előre foglalni asztalt, mindig csak az adott hónapban. A gombra rákattintba az adott dátumok között tud választani, és napokra leosztva időpontot tud foglalni.
-- ⚙️ Étlap: Az étlap több különböző rétegre van bontva. Minden fogyasztható terméket külön-külön tud megnézni a látogató.
-- ⚙️ Vélemények: A legfrisebb felhasználói vélemények.
-- ⚙️ Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
-- ⚙️  időpont foglalás 👉 
-A foglalás sikerességéről visszajelzést kapunk a képernyőn.
-- ⚙️  galéria 👉 Minden szükséges információ elérhető itt az étteremről.
-- ⚙️  előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék 👉
-Az oldalak közötti váltakozás mintha egy étlapot lapoznánk. Nyilakkal tettük ezt lehetővé. 
-Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
-hogyan és miként fogyasztják. Ezt úgy tudjuk látni ha a kurzort az étel
+- Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
+-  Foglalás: Lehetősége van a látogatónak előre foglalni asztalt, mindig csak az adott hónapban. A gombra rákattintba az adott dátumok között tud választani, és napokra leosztva időpontot tud foglalni.
+-  Étlap: Az étlap több különböző rétegre van bontva. Minden fogyasztható terméket külön-külön tud megnézni a látogató.
+-  Vélemények: A legfrisebb felhasználói vélemények.
+-  Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
+-  Időpont foglalás 👉 Konkrét napot és időpontot tudunk választani az adott hónapban erről a sikerességéről visszajelzést kapunk a képernyőn egy felugró ablakban.
+- Galéria (galeria.html)Itt minden szükséges információ elérhető az étteremről.
+- Előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék oldalak közötti váltakozás célja, hogy olyan legyen a felhasználónak mintha egy étlapot lapozna. Nyilakkal tettük ezt lehetővé a fejlécben. Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
+hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
-(ide kellene egy kép erről.)
-## 📦 Kódblokk
-**Íme hogyan oldottuk meg: **
-````(úgy emlékszem css-ben van.)
-```
-```
-````
+
 # Technikai megvalósítások:
- HTML5
- CSS a dizájnhoz
- Font Awesome az ikonokhoz
+ - HTML5
+ - CSS a dizájnhoz
+ - Font Awesome az ikonokhoz
 # A projekt struktúrája
 ├── html/
 │     ├── Admin.html
