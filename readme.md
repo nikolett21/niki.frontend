@@ -40,11 +40,12 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 - Az *előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék* oldalak közötti váltakozás célja, hogy olyan legyen a felhasználónak mintha egy étlapot lapozna. Nyilakkal tettük ezt lehetővé a fejlécben. Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
 hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
-
+ ---
 ## Technikai megvalósítások:
  - HTML5 ✅
  - CSS a dizájnhoz ✅
  - Font Awesome az ikonokhoz ✅
+ ---
 ## A projekt struktúrája
 ```markdown
 ├── html/
@@ -102,6 +103,7 @@ fotója felé visszük.
 - 🌟 Ételek keresése az oldalak átlapozása nélkül
 - 🌟 Online fizetés 
 - 🌟 Admin oldal
+ ---
 ## Az oldalon használt hivatkozások
 🔗  Git Hub
 🔗  Netlify
