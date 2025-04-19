@@ -1,14 +1,13 @@
 # Ízhorizon Éttermünk – Az ízek horizontján!
 **Frontend**
 
-- ⚙️ Projektünkbe nagy lendülettel vágtunk bele, több ötletünk volt, hogy miről kellene csinálunk ezt a munkát.
-Abban biztosak voltunk hogy weboldalt szeretnénk és abban is hogy valami olyan témát jelenitsünk meg ami mind a kettőnket érdekel vagy van valamilyen személyes élményünk is a dologgal. A figmas tervezés elég egyszerűen ment, egyértelműen tudtuk mit szeretnénk. Ahogy egyre jobban ástuk bele magunkat egyre több ötlet követte egymást, így született meg a mi tetszésünknek megfelelő terv. 
+-  Projektünkbe nagy lendülettel vágtunk bele, több ötletünk volt, hogy miről kellene csinálunk ezt a munkát.
+Abban biztosak voltunk hogy weboldalt szeretnénk és abban is hogy valami olyan témát jelenitsünk meg ami mind a kettőnket érdekel vagy van valamilyen személyes élményünk is a dologgal. A Figmás tervezés elég egyszerűen ment, egyértelműen tudtuk mit szeretnénk. Ahogy egyre jobban ástuk bele magunkat egyre több ötlet követte egymást, így született meg a mi tetszésünknek megfelelő terv. 
 
-- Próbáltunk egy friss, modern weblapot csinálni, benne hagyományos és előkelő stílussal. ✅
+- Próbáltunk egy friss, modern weblapot csinálni, benne hagyományos és előkelő stílussal. 
 
 ---
-Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
-👉 [Figma terv megtekintése](https://www.figma.com/design/ipdP2BYytD8pvShEUWwQOF/Projekt?node-id=0-1&p=f&t=Wqw4hQMBFSGBfEpm-0)
+Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma terv megtekintése](https://www.figma.com/design/ipdP2BYytD8pvShEUWwQOF/Projekt?node-id=0-1&p=f&t=Wqw4hQMBFSGBfEpm-0)
 
 ## Tartalomjegyzék
 - [Bevezetés](#Bevezetés)
@@ -19,18 +18,12 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal :
 - [Licenc](#licenc)
 ---
 # Bevezetés
-- ⚙️ index.html 👉 A legelső oldal, egy regisztráció után a bejelentkezés választja el a felhasználót a fő oldaltól. 
-![Bejelentkezés](https://i.postimg.cc/FsrcByT7/k-p-2025-04-15-113131522.png)
-Ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
-Keresztnév, vezetéknév, email és jelszó mezők.
-- ⚙️ registration.html 👉
-![Regisztráció](https://i.postimg.cc/yNps7HHM/k-p-2025-04-15-113750861.png)
-- ⚙️ profile.html 👉
-![Profil szerkesztés](https://i.postimg.cc/BQ2YT9m2/k-p-2025-04-15-121133060.png) 
-Regisztrált felhasználók számára::
-Profiladatok szerkesztése
-Jelszó változtatás
-- ⚙️ home.html 👉 A legfőbb oldal. Az egész projektnek az alapja. 
+- Az index.html a legelső oldal, ami a már meglévő fiókkal történő bejelentkezést teszi lehetővé.  
+- A registration.html arra szolgál
+ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
+Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
+- profile.html olyan felhasználók számára fejlesztett oldal akik rendelkeznek már fiókkal. Itt tudják módosítani a jelszavukat, profilképüket és a nevüket is.
+- home.html a legfőbb oldal. Az egész projektnek az alapja. Innen érhető el egy "Részletek" gombra kattintva az ételeink. Látható egy fotó az étteremről illetve a róla adott vélemények is.
 # Főbb elemek: 
 - ⚙️ Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
 - ⚙️ Foglalás: Lehetősége van a látogatónak előre foglalni asztalt, mindig csak az adott hónapban. A gombra rákattintba az adott dátumok között tud választani, és napokra leosztva időpontot tud foglalni.
