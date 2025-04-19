@@ -58,21 +58,21 @@ fotója felé visszük.
 │     ├── registration.html
 │     └── Üdítők.html
 ├── css/
-- │   ├── Admin.css
-- │   ├── bejreg.css
-- │   ├── desszertek.css
-- │   ├── eloetelek.css
-- │   ├── foetelek.css
-- │   ├── galeria.css
-- │   ├── home.css
-- │   ├── index.css
-- │   ├── kavek.css
-- │   ├── koretek.css
-- │   ├── levesek.css
-- │   ├── naptar.css
-- │   ├── profile.css
-- │   ├── registration.css
-- │   └── uditok.css
+ │   ├── Admin.css
+ │   ├── bejreg.css
+ │   ├── desszertek.css
+ │   ├── eloetelek.css
+ │   ├── foetelek.css
+ │   ├── galeria.css
+ │   ├── home.css
+ │   ├── index.css
+ │   ├── kavek.css
+ │   ├── koretek.css
+ │   ├── levesek.css
+ │   ├── naptar.css
+ │   ├── profile.css
+ │   ├── registration.css
+ │   └── uditok.css
  ├── js/
  │   ├── admin.js
  │   ├── adminful.js
