@@ -11,7 +11,7 @@ Abban biztosak voltunk hogy weboldalt szeretnénk és abban is hogy valami olyan
 
 ---
 Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma terv megtekintése](https://www.figma.com/design/ipdP2BYytD8pvShEUWwQOF/Projekt?node-id=0-1&p=f&t=Wqw4hQMBFSGBfEpm-0)
-```markdown
+
 ## Tartalomjegyzék
 - [Bevezetés](#Bevezetés)
 - [Főbb elemek](#Főbbelemek)
