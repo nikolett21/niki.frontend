@@ -15,28 +15,28 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 ## Tartalomjegyzék
 - [Bevezetés](#Bevezetés)
 - [Főbb elemek](#Főbbelemek)
-- [Technikai megvalósítások](#megvalósítások)
+- [Technikai megvalósítások](#Technikaimegvalósítások)
 - [A projekt struktúrája](#Aprojektstruktúrája)
 - [Jövőbeli fejlesztési tervek:](#Jövőbelifejlesztésitervek:)
 - [Az oldalon használt hivatkozások](#Azoldalonhasználthivatkozások)
 
 ---
 ## Bevezetés
-- Az index.html a legelső oldal, ami a már meglévő fiókkal történő bejelentkezést teszi lehetővé.  
-- A registration.html arra szolgál
+- Az *index.html* a legelső oldal, ami a már meglévő fiókkal történő bejelentkezést teszi lehetővé.  
+- A *registration.html* arra szolgál
 ha a felhasználónak nincs esetleg még fiókja akkor lehetősége van a regisztrációra kattintva regisztrálni is új felhasználóként. 
 Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
-- profile.html olyan felhasználók számára fejlesztett oldal akik rendelkeznek már fiókkal. Itt tudják módosítani a jelszavukat, profilképüket és a nevüket is.
-- home.html a legfőbb oldal. Az egész projektnek az alapja. Innen érhető el egy "Részletek" gombra kattintva az ételeink. Látható egy fotó az étteremről illetve a róla adott vélemények is.
+- A *profile.html* olyan felhasználók számára fejlesztett oldal akik rendelkeznek már fiókkal. Itt tudják módosítani a jelszavukat, profilképüket és a nevüket is.
+- A *home.html* a főoldal. Az egész projektnek az alapja. Innen érhető el egy "Részletek" gombra kattintva az ételeink. Látható egy fotó az étteremről illetve a róla adott vélemények is.
 ## Főbb elemek: 
 - Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
 -  Foglalás: Lehetősége van a látogatónak előre foglalni asztalt, mindig csak az adott hónapban. A gombra rákattintba az adott dátumok között tud választani, és napokra leosztva időpontot tud foglalni.
 -  Étlap: Az étlap több különböző rétegre van bontva. Minden fogyasztható terméket külön-külön tud megnézni a látogató.
--  Vélemények: A legfrisebb felhasználói vélemények.
--  Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségek.
--  Időpont foglalás oldalon konkrét napot és időpontot tudunk választani az adott hónapban és erről a sikerességéről visszajelzést kapunk a képernyőn felugró ablakban.
-- Galéria (galeria.html)Itt minden szükséges információ elérhető az étteremről.
-- Előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék oldalak közötti váltakozás célja, hogy olyan legyen a felhasználónak mintha egy étlapot lapozna. Nyilakkal tettük ezt lehetővé a fejlécben. Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
+-  Vélemények: A legfrisebb felhasználói vélemények olvashatóak
+-  Elérhetőség: Az étterem elérhetősége, és fizetési lehetőségeket láthatunk
+-  Az időpont foglalás *naptar.html* oldalon konkrét napot és időpontot tudunk választani az adott hónapban és erről a sikerességéről visszajelzést kapunk a képernyőn felugró ablakban.
+- A *galeria.html* oldal ahol minden szükséges információ elérhető az étteremről.
+- Az *előételek, levesek, főételek, köretek és savanyúságok, desszertek, kávék* oldalak közötti váltakozás célja, hogy olyan legyen a felhasználónak mintha egy étlapot lapozna. Nyilakkal tettük ezt lehetővé a fejlécben. Minden kategóriában, minden ételnél leírást adtunk arról, hogy kik,
 hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
 
