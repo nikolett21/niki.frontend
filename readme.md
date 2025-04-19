@@ -17,7 +17,7 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 - [Főbb elemek](#Főbbelemek)
 - [Technikai megvalósítások](#Technikaimegvalósítások)
 - [A projekt struktúrája](#Aprojektstruktúrája)
-- [Jövőbeli fejlesztések:](#Jövőbelifejlesztések:)
+- [Jövőbeli fejlesztési tervek:](#Jövőbelifejlesztésitervek:)
 - [Az oldalon használt hivatkozások](#Azoldalonhasználthivatkozások)
 
 ---
