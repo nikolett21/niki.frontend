@@ -15,7 +15,7 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 ## Tartalomjegyzék
 - [Bevezetés](#Bevezetés)
 - [Elemek](#Elemek)
-- [Technikai megvalósítások](#Technikaimegvalósítások)
+- [Technika](#Technika)
 - [A projekt struktúrája](#Aprojektstruktúrája)
 - [Jövőbeli fejlesztési tervek](#Jövőbelifejlesztésitervek:)
 - [Az oldalon használt hivatkozások](#Azoldalonhasználthivatkozások)
@@ -41,7 +41,7 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
  ---
-## Technikai megvalósítások:
+## Technika:
  - HTML5 ✅
  - CSS a dizájnhoz ✅
  - Font Awesome az ikonokhoz ✅
