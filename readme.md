@@ -29,7 +29,7 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 - A *profile.html* olyan felhasználók számára fejlesztett oldal akik rendelkeznek már fiókkal. Itt tudják módosítani a jelszavukat, profilképüket és a nevüket is.
 - A *home.html* a főoldal. Az egész projektnek az alapja. Innen érhető el egy "Részletek" gombra kattintva az ételeink. Látható egy fotó az étteremről illetve a róla adott vélemények is.
 ---
-## Tudnivalók: 
+## Tudnivalók
 #### Legfontosabb elemek
 - Navigációs sáv: Profil módosítási lehetőség, Információk az étteremről, Kijelentkezés  
 -  Foglalás: Lehetősége van a látogatónak előre foglalni asztalt, mindig csak az adott hónapban. A gombra rákattintba az adott dátumok között tud választani, és napokra leosztva időpontot tud foglalni.
@@ -42,7 +42,7 @@ Keresztnév, vezetéknév, email és jelszó mezők kitöltésével.
 hogyan és miként fogyasztják. Ez úgy válik láthatóvá ha a kurzort az étel
 fotója felé visszük.
  ---
-## Technika:
+## Technika
 #### Amikkel dolgoztunk..
  - HTML5 ✅
  - CSS a dizájnhoz ✅
@@ -101,7 +101,7 @@ fotója felé visszük.
 ```
 
 ---
- ## Fejleszthető:
+ ## Fejleszthető
  #### A jövőben szeretnénk megvalósítani még
 - 🌟 Az ételek keresését az oldalak átlapozása nélkül
 - 🌟 Az online fizetési lehetőséget 
@@ -109,9 +109,9 @@ fotója felé visszük.
  ---
 ## Hivatkozások
 
-🔗  Git Hub
-🔗  Netlify
-🔗  Chat GPT
+🔗 - Git Hub
+🔗 - Netlify
+🔗 - Chat GPT
 
 
 
