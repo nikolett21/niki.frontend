@@ -115,8 +115,11 @@ fotója felé visszük.
 
  #### Bejelentkezés
 👉 [Az oldal megtekintése](https://izhorizon.netlify.app)
-- Felhasználói név :
-- Jelszó : 
+- Email : teszt@teszt.com
+- Jelszó : jelszo
+- Admin email : admin@admin.com
+- Jelszó : jelszo
+
 
  
 
