@@ -14,7 +14,7 @@ Az oldal terve Figmában készült kisebb nagyobb változtatásokkal👉 [Figma 
 
 ## Tartalomjegyzék
 - [Bevezetés](#Bevezetés)
-- [Tudnivalók](Tudnivalók)
+- [Tudnivalók](#Tudnivalók)
 - [Technika](#Technika)
 - [Struktúra](#Struktúra)
 - [Fejleszthető](#Fejleszthető)
