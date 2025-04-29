@@ -109,9 +109,9 @@ fotója felé visszük.
  ---
 ## Hivatkozások
 
-🔗 - Git Hub
-🔗 - Netlify
-🔗 - Chat GPT
+🔗  Git Hub
+🔗 Netlify
+🔗  Chat GPT
 
 
 
