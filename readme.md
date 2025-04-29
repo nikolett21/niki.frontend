@@ -120,6 +120,8 @@ fotója felé visszük.
 - Admin email : admin@admin.com
 - Jelszó : jelszo
 
+# Backend
+- [Backend Repo](https://github.com/mihaly81/izhorizon.git)
 
  
 
