@@ -115,8 +115,8 @@ fotója felé visszük.
 
  #### Bejelentkezés
 👉 [Az oldal megtekintése](https://izhorizon.netlify.app)
-- 🏒 Felhasználói név : kovari.nikolett11@gmail.com
+- Felhasználói név : kovari.nikolett11@gmail.com
 - Jelszó : jelszo
- 🏒
+ 
 
 
