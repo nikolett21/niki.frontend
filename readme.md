@@ -113,3 +113,5 @@ fotója felé visszük.
 🔗  Netlify
 🔗  Chat GPT
 
+
+
