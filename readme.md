@@ -1,5 +1,5 @@
 # Ízhorizon Éttermünk – Az ízek horizontján!
-- Készítette: Kővári Nikolett
+- Készítette: Kővári Nikolett, Gacsó Mihály Norbert
 ---
 **Frontend**
 
