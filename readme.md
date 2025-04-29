@@ -113,5 +113,10 @@ fotója felé visszük.
 🔗 Netlify
 🔗  Chat GPT
 
+ #### Bejelentkezés
+👉 [Az oldal megtekintése](izhorizon.netlify.app)
+ 🏒 Felhasználói név : kovari.nikolett11@gmail.com
+    Jelszó : jelszo
+ 🏒
 
 
